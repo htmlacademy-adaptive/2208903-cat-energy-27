@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <title>Кэт энерджи-главная страница</title>
+    <title>Кэт энерджи-страница формы</title>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -41,114 +41,212 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container">
-      <h1 class="visually-hidden">
-        «Кэт Энерджи» - магазин современного питания для ваших котиков.
-      </h1>
-      <section class="promo">
-        <div class="promo__wrapper">
-          <header class="promo__header">
-            <h2 class="visually-hidden">
-              Подбор программы питания для вашего питомца.
-            </h2>
-            <p class="promo__intro">
-              Функциональное <br />
-              питание для котов
-            </p>
-            <p class="promo__slogan">Занялся собой? Займись котом!</p>
-            <img
-              class="promo__image"
-              src="..//source/images/index-can.jpg"
-              width="280"
-              height="270"
-              alt="Изображение банки с кормом «Кэт Энерджи» "
+    <main class="main-container form">
+      <section class="form__content">
+        <h1 class="visually-hidden">Заполните данные</h1>
+        <form
+          class="appointment-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <h2 class="appointment-form__title">Подбор программы</h2>
+          <p class="appointment-form__description">
+            Заполните анкету, и мы подберем<br />
+            программу питания для вашего кота
+          </p>
+
+          <div class="appointment-form__name">
+            <label class="appointment-form__label" for="appointment-name-cat">
+              Имя:*</label
+            >
+            <input
+              class="name-field"
+              type="text"
+              id="appointment-name-cat"
+              name="appointment-name"
+              value="Барсик"
+              placeholder="Укажите имя"
+              required
             />
-            <a class="promo__button" href="#">Подобрать программу</a>
-          </header>
-        </div>
-        <div class="service">
-          <h2 class="visually-hidden">Методики работы.</h2>
-          <h3 class="service__title">Похудение</h3>
-          <p class="service-description">
-            Ваш кот весит больше собаки и<br />
-            почти утратил способность лазить<br />
-            по деревьям? Пора на диету! Cat Energy Slim поможет вашему<br />
-            питомцу сбросить лишний вес.
-          </p>
-          <a class="service__link" href="#">каталог slim</a>
-        </div>
-        <div class="service">
-          <h3 class="service__title">Набор массы</h3>
-          <p class="service-description">
-            Заработать авторитет среди<br />
-            дворовых котов и даже собак?<br />
-            Серия Cat Energy Pro поможет<br />
-            вашему коту нарастить<br />
-            необходимые мышцы!
-          </p>
-          <a class="service__link" href="#">каталог pro</a>
-        </div>
+          </div>
+          <div class="appointment-form__weight">
+            <label class="appointment-form__label" for="appointment-weight-cat">
+              Вес (кг):*</label
+            >
+            <input
+              class="weight-field"
+              type="text"
+              id="appointment-weight-cat"
+              name="appointment-weight"
+              value="7"
+              placeholder="Укажите вес"
+              required
+            />
+          </div>
+          <div class="appointment-form__age">
+            <label class="appointment-form__label" for="appointment-age-cat">
+              Возраст (лет):</label
+            >
+            <input
+              class="age-field"
+              type="text"
+              id="appointment-age-cat"
+              name="appointment-age"
+              value="7"
+              placeholder="Укажите возраст"
+              required
+            />
+          </div>
+        </form>
       </section>
-      <section class="benefits">
-        <div class="benefits__wrapper">
-          <h2 class="benefits__title">Как это работает</h2>
-          <ul class="benefits__list">
-            <li class="benefits__item">
-              <p class="benefits-description">
-                Функциональное питание<br />
-                содержит только полезные<br />
-                питательные вещества.
-              </p>
-            </li>
-            <li class="benefits__item">
-              <p class="benefits-description">
-                Выпускается в виде порошка,<br />
-                который нужно лишь залить<br />
-                кипятком и готово.
-              </p>
-            </li>
-            <li class="benefits__item">
-              <p class="benefits-description">
-                Замените один-два приема <br />
-                обычной еды на наше<br />
-                функциональное питание.
-              </p>
-            </li>
-            <li class="benefits__item">
-              <p class="benefits-description">
-                Уже через месяц<br />
-                наслаждайтесь изменениями<br />
-                к лучшему вашего питомца!
-              </p>
-            </li>
-          </ul>
-        </div>
+      <section class="service-choice">
+        <h2 class="visually-hidden">Выбор программы</h2>
+        <ul class="service-choice__list">
+          <li class="service-choice__item">
+            <label class="control">
+              <input
+                class="visually-hidden control-input"
+                type="radio"
+                name="service-group"
+                value="weight-loss"
+                checked
+                required
+              /><span class="control-label">Похудение</span>
+            </label>
+          </li>
+          <li class="service-choice__item">
+            <label class="control">
+              <input
+                class="visually-hidden control-input"
+                type="radio"
+                name="service-group"
+                value="weight-gain"
+                required
+              /><span class="control-label">Набор массы</span>
+            </label>
+          </li>
+          <li class="service-choice__item">
+            <label class="control">
+              <input
+                class="visually-hidden control-input"
+                type="radio"
+                name="service-group"
+                value="advice"
+                required
+              /><span class="control-label">Не знаю (Нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
       </section>
-      <section class="example">
-        <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">
-            Борис сбросил 5 кг за 2 месяца, просто<br />
-            заменив свой обычный корм на Cat Energy<br />
-            Slim. Отличный результат без изнуряющих<br />
-            тренировок! При этом он не менял своих<br />
-            привычек и по-прежнему спит по 16 часов<br />
-            в день.
-          </p>
-          <dl class="example__list">
-            <div class="example__item">
-              <dt class="example__number">5 кг</dt>
-              <dd class="example__description">снижение веса</dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__number">60 дней</dt>
-              <dd class="example__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="#">затраты на питание: 15000 руб.</p>
-        </div>
+      <section class="contacts-owner">
+        <form
+          class="contacts-owner-form"
+          action="https://echo.htmlacademy.ru/"
+          method="post"
+        >
+          <h2 class="contacts-owner-form__title">
+            Контактные данные<br />
+            (владельца кота)
+          </h2>
+          <div class="contacts-owner-form__email">
+            <label class="contacts-owner-form__label" for="contacts-form-email">
+              E-mail:*</label
+            >
+            <input
+              class="e-mail"
+              type="email"
+              id="contacts-form-email"
+              name="contacts-email-adress"
+              value="kuklachev@gmail.com"
+              placeholder="Укажите e-mail"
+              required
+            />
+          </div>
+          <div class="contacts-owner-form__phone-number">
+            <label
+              class="contacts-owner-form__label"
+              type="tel"
+              for="contacts-form-phone-number"
+            >
+              Телефон:*</label
+            >
+            <input
+              class="phone-number"
+              type="tel"
+              id="contacts-form-contacts-form-phone-number"
+              name="contacts-phone-number"
+              value="8 (960) 900-60-90"
+              placeholder="Укажите номер телефона"
+              required
+            />
+          </div>
+        </form>
       </section>
-      <section class="slider"></section>
+      <section class="comment">
+        <form class="comment-form">
+          <h2 class="comment-form__title">Комментарий</h2>
+          <textarea
+            class="comment-form__field"
+            name="comment"
+            id="comment-field"
+            rows="10"
+          >
+            Расскажите обо всех повадках кота</textarea
+          >
+        </form>
+      </section>
+      <section class="service-choice-add">
+        <h2 class="visually-hidden">Дополнительный выбор</h2>
+        <ul class="service-choice-add__list">
+          <li class="service-choice-add__item">
+            <label class="control">
+              <input
+                class="visually-hidden control-input"
+                type="checkbox"
+                name="service-group"
+                value="sweetener"
+                checked
+                required
+              /><span class="control-label">сахарозаменитель</span>
+            </label>
+          </li>
+          <li class="service-choice-add__item">
+            <label class="control">
+              <input
+                class="visually-hidden control-input"
+                type="checkbox"
+                name="service-group"
+                value="water"
+                required
+              /><span class="control-label">питьевая вода</span>
+            </label>
+          </li>
+          <li class="service-choice-add__item">
+            <label class="control">
+              <input
+                class="visually-hidden control-input"
+                type="checkbox"
+                name="service-group"
+                value="milk"
+                required
+              /><span class="control-label">молоко</span>
+            </label>
+          </li>
+          <li class="service-choice-add__item">
+            <label class="control">
+              <input
+                class="visually-hidden control-input"
+                type="checkbox"
+                name="service-group"
+                value="vitamins"
+                required
+              /><span class="control-label">витамины</span>
+            </label>
+          </li>
+        </ul>
+        <a class="service-choice-add__link" href="#">отправить заявку</a>
+        <p class="service-choice-add__description">* — Обязательные поля</p>
+      </section>
       <section class="contacts">
         <div class="contacts__wrapper">
           <h2 class="visually hidden">Контакты.</h2>
