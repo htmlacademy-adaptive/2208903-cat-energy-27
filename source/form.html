@@ -10,7 +10,7 @@
         <a class="main-nav__logo" href="#">
           <img
             class="logo-image"
-            src="..//source/images/logo/logo-1.svg"
+            src="images/logo/logo-1.svg"
             width="34"
             height="38"
             alt="изображение логотипа «Кэт Энерджи» ."
@@ -19,7 +19,7 @@
         <a class="main-nav__logo-2" href="#">
           <img
             class="logo-image-2"
-            src="..//source/images/logo/logo-2.svg"
+            src="images/logo/logo-2.svg"
             width="101"
             height="18"
             alt="изображение логотипа «Кэт Энерджи» в виде букв."
@@ -45,22 +45,25 @@
       <section class="form__content">
         <h1 class="visually-hidden">Заполните данные</h1>
         <form
-          class="appointment-form"
+          class="settings-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <h2 class="appointment-form__title">Подбор программы</h2>
-          <p class="appointment-form__description">
+          <h2 class="settings-form__title">Подбор программы</h2>
+          <p class="settings-form__description">
             Заполните анкету, и мы подберем<br />
             программу питания для вашего кота
           </p>
 
-          <div class="appointment-form__name">
-            <label class="appointment-form__label" for="appointment-name-cat">
+          <div class="settings-form__item settings-form__item--name">
+            <label
+              class="settings-form__label settings-form__label--name"
+              for="appointment-name-cat"
+            >
               Имя:*</label
             >
             <input
-              class="name-field"
+              class="settings-form__input settings-form__input--name"
               type="text"
               id="appointment-name-cat"
               name="appointment-name"
@@ -69,12 +72,15 @@
               required
             />
           </div>
-          <div class="appointment-form__weight">
-            <label class="appointment-form__label" for="appointment-weight-cat">
+          <div class="settings-form__item settings-form__item--weight">
+            <label
+              class="settings-form__label settings-form__label--weight"
+              for="appointment-weight-cat"
+            >
               Вес (кг):*</label
             >
             <input
-              class="weight-field"
+              class="settings-form__input settings-form__input--weight"
               type="text"
               id="appointment-weight-cat"
               name="appointment-weight"
@@ -83,12 +89,15 @@
               required
             />
           </div>
-          <div class="appointment-form__age">
-            <label class="appointment-form__label" for="appointment-age-cat">
+          <div class="settings-form__item settings-form__item--age">
+            <label
+              class="settings-form__label settings-form__label--age"
+              for="appointment-age-cat"
+            >
               Возраст (лет):</label
             >
             <input
-              class="age-field"
+              class="settings-form__input settings-form__input--age"
               type="text"
               id="appointment-age-cat"
               name="appointment-age"
@@ -103,57 +112,62 @@
         <h2 class="visually-hidden">Выбор программы</h2>
         <ul class="service-choice__list">
           <li class="service-choice__item">
-            <label class="control">
+            <label class="service-choice__control">
               <input
-                class="visually-hidden control-input"
+                class="visually-hidden service-choice__control-input"
                 type="radio"
                 name="service-group"
                 value="weight-loss"
                 checked
                 required
-              /><span class="control-label">Похудение</span>
+              /><span class="service-choice__control-label">Похудение</span>
             </label>
           </li>
           <li class="service-choice__item">
-            <label class="control">
+            <label class="service-choice__control">
               <input
-                class="visually-hidden control-input"
+                class="visually-hidden service-choice__control-input"
                 type="radio"
                 name="service-group"
                 value="weight-gain"
                 required
-              /><span class="control-label">Набор массы</span>
+              /><span class="service-choice__control-label">Набор массы</span>
             </label>
           </li>
           <li class="service-choice__item">
-            <label class="control">
+            <label class="service-choice__control">
               <input
-                class="visually-hidden control-input"
+                class="visually-hidden service-choice__control-input"
                 type="radio"
                 name="service-group"
                 value="advice"
                 required
-              /><span class="control-label">Не знаю (Нужен ваш совет)</span>
+              /><span class="service-choice__control-label"
+                >Не знаю (Нужен ваш совет)</span
+              >
             </label>
           </li>
         </ul>
       </section>
-      <section class="contacts-owner">
+      <section class="contacts">
         <form
-          class="contacts-owner-form"
+          class="user-form"
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <h2 class="contacts-owner-form__title">
+          <h2 class="user-form__title">
             Контактные данные<br />
             (владельца кота)
           </h2>
-          <div class="contacts-owner-form__email">
-            <label class="contacts-owner-form__label" for="contacts-form-email">
+          <div class="user-form__item user-form__item--email">
+            <label
+              class="user-form__label user-form__label--email"
+              for="contacts-form-email"
+            >
               E-mail:*</label
             >
             <input
-              class="e-mail"
+              class="user-form__input user-form__input--email"
               type="email"
               id="contacts-form-email"
               name="contacts-email-adress"
@@ -162,18 +176,18 @@
               required
             />
           </div>
-          <div class="contacts-owner-form__phone-number">
+          <div class="user-form__item user-form__item--phone-number">
             <label
-              class="contacts-owner-form__label"
+              class="user-form__label user-form__label--phone-number"
               type="tel"
               for="contacts-form-phone-number"
             >
               Телефон:*</label
             >
             <input
-              class="phone-number"
+              class="user-form__input user-form__input--phone-number"
               type="tel"
-              id="contacts-form-contacts-form-phone-number"
+              id="contacts-form-phone-number"
               name="contacts-phone-number"
               value="8 (960) 900-60-90"
               placeholder="Укажите номер телефона"
@@ -183,10 +197,10 @@
         </form>
       </section>
       <section class="comment">
-        <form class="comment-form">
-          <h2 class="comment-form__title">Комментарий</h2>
+        <form class="form-field">
+          <h2 class="form-field__title">Комментарий</h2>
           <textarea
-            class="comment-form__field"
+            class="form-field__textarea"
             name="comment"
             id="comment-field"
             rows="10"
@@ -199,48 +213,52 @@
         <h2 class="visually-hidden">Дополнительный выбор</h2>
         <ul class="service-choice-add__list">
           <li class="service-choice-add__item">
-            <label class="control">
+            <label class="service-choice-add__control">
               <input
-                class="visually-hidden control-input"
+                class="visually-hidden service-choice-add__control-input"
                 type="checkbox"
                 name="service-group"
                 value="sweetener"
                 checked
                 required
-              /><span class="control-label">сахарозаменитель</span>
+              /><span class="service-choice-add__control-label"
+                >сахарозаменитель</span
+              >
             </label>
           </li>
           <li class="service-choice-add__item">
-            <label class="control">
+            <label class="service-choice-add__control">
               <input
-                class="visually-hidden control-input"
+                class="visually-hidden service-choice-add__control-input"
                 type="checkbox"
                 name="service-group"
                 value="water"
                 required
-              /><span class="control-label">питьевая вода</span>
+              /><span class="service-choice-add__control-label"
+                >питьевая вода</span
+              >
             </label>
           </li>
           <li class="service-choice-add__item">
-            <label class="control">
+            <label class="service-choice-add__control">
               <input
-                class="visually-hidden control-input"
+                class="visually-hidden service-choice-add__control-input"
                 type="checkbox"
                 name="service-group"
                 value="milk"
                 required
-              /><span class="control-label">молоко</span>
+              /><span class="service-choice-add__control-label">молоко</span>
             </label>
           </li>
           <li class="service-choice-add__item">
-            <label class="control">
+            <label class="service-choice-add__control">
               <input
-                class="visually-hidden control-input"
+                class="visually-hidden service-choice-add__control-input"
                 type="checkbox"
                 name="service-group"
                 value="vitamins"
                 required
-              /><span class="control-label">витамины</span>
+              /><span class="service-choice-add__control-label">витамины</span>
             </label>
           </li>
         </ul>
@@ -262,7 +280,7 @@
           </p>
           <img
             class="contacts__map"
-            src="..//source/images/map.jpg"
+            src="images/map.jpg"
             width="320"
             height="362"
             alt="Расположение на карте."
@@ -277,7 +295,7 @@
           <a class="main-footer__logo-2" href="#">
             <img
               class="logo-image-2"
-              src="..//source/images/logo/logo-2.svg"
+              src="images/logo/logo-2.svg"
               width="101"
               height="18"
               alt="изображение логотипа «Кэт Энерджи» в виде букв."
