@@ -41,250 +41,242 @@
         </ul>
       </nav>
     </header>
-    <main class="main-container form">
-      <section class="form__content">
-        <h1 class="visually-hidden">Заполните данные</h1>
-        <form
-          class="settings-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <h2 class="settings-form__title">Подбор программы</h2>
-          <p class="settings-form__description">
-            Заполните анкету, и мы подберем<br />
-            программу питания для вашего кота
-          </p>
+    <main class="main-container">
+      <section class="form-content">
+        <div class="form-content__wrapper">
+          <h1 class="visually-hidden">Заполните данные</h1>
 
-          <div class="settings-form__item settings-form__item--name">
-            <label
-              class="settings-form__label settings-form__label--name"
-              for="appointment-name-cat"
-            >
-              Имя:*</label
-            >
-            <input
-              class="settings-form__input settings-form__input--name"
-              type="text"
-              id="appointment-name-cat"
-              name="appointment-name"
-              value="Барсик"
-              placeholder="Укажите имя"
-              required
-            />
-          </div>
-          <div class="settings-form__item settings-form__item--weight">
-            <label
-              class="settings-form__label settings-form__label--weight"
-              for="appointment-weight-cat"
-            >
-              Вес (кг):*</label
-            >
-            <input
-              class="settings-form__input settings-form__input--weight"
-              type="text"
-              id="appointment-weight-cat"
-              name="appointment-weight"
-              value="7"
-              placeholder="Укажите вес"
-              required
-            />
-          </div>
-          <div class="settings-form__item settings-form__item--age">
-            <label
-              class="settings-form__label settings-form__label--age"
-              for="appointment-age-cat"
-            >
-              Возраст (лет):</label
-            >
-            <input
-              class="settings-form__input settings-form__input--age"
-              type="text"
-              id="appointment-age-cat"
-              name="appointment-age"
-              value="7"
-              placeholder="Укажите возраст"
-              required
-            />
-          </div>
-        </form>
-      </section>
-      <section class="service-choice">
-        <h2 class="visually-hidden">Выбор программы</h2>
-        <ul class="service-choice__list">
-          <li class="service-choice__item">
-            <label class="service-choice__control">
-              <input
-                class="visually-hidden service-choice__control-input"
-                type="radio"
-                name="service-group"
-                value="weight-loss"
-                checked
-                required
-              /><span class="service-choice__control-label">Похудение</span>
-            </label>
-          </li>
-          <li class="service-choice__item">
-            <label class="service-choice__control">
-              <input
-                class="visually-hidden service-choice__control-input"
-                type="radio"
-                name="service-group"
-                value="weight-gain"
-                required
-              /><span class="service-choice__control-label">Набор массы</span>
-            </label>
-          </li>
-          <li class="service-choice__item">
-            <label class="service-choice__control">
-              <input
-                class="visually-hidden service-choice__control-input"
-                type="radio"
-                name="service-group"
-                value="advice"
-                required
-              /><span class="service-choice__control-label"
-                >Не знаю (Нужен ваш совет)</span
-              >
-            </label>
-          </li>
-        </ul>
-      </section>
-      <section class="contacts">
-        <form
-          class="user-form"
-          action="https://echo.htmlacademy.ru/"
-          method="post"
-        >
-          <h2 class="user-form__title">
-            Контактные данные<br />
-            (владельца кота)
-          </h2>
-          <div class="user-form__item user-form__item--email">
-            <label
-              class="user-form__label user-form__label--email"
-              for="contacts-form-email"
-            >
-              E-mail:*</label
-            >
-            <input
-              class="user-form__input user-form__input--email"
-              type="email"
-              id="contacts-form-email"
-              name="contacts-email-adress"
-              value="kuklachev@gmail.com"
-              placeholder="Укажите e-mail"
-              required
-            />
-          </div>
-          <div class="user-form__item user-form__item--phone-number">
-            <label
-              class="user-form__label user-form__label--phone-number"
-              type="tel"
-              for="contacts-form-phone-number"
-            >
-              Телефон:*</label
-            >
-            <input
-              class="user-form__input user-form__input--phone-number"
-              type="tel"
-              id="contacts-form-phone-number"
-              name="contacts-phone-number"
-              value="8 (960) 900-60-90"
-              placeholder="Укажите номер телефона"
-              required
-            />
-          </div>
-        </form>
-      </section>
-      <section class="comment">
-        <form class="form-field">
-          <h2 class="form-field__title">Комментарий</h2>
-          <textarea
-            class="form-field__textarea"
-            name="comment"
-            id="comment-field"
-            rows="10"
+          <form
+            class="form-item"
+            action="https://echo.htmlacademy.ru/"
+            method="post"
           >
-            Расскажите обо всех повадках кота</textarea
-          >
-        </form>
-      </section>
-      <section class="service-choice-add">
-        <h2 class="visually-hidden">Дополнительный выбор</h2>
-        <ul class="service-choice-add__list">
-          <li class="service-choice-add__item">
-            <label class="service-choice-add__control">
-              <input
-                class="visually-hidden service-choice-add__control-input"
-                type="checkbox"
-                name="service-group"
-                value="sweetener"
-                checked
-                required
-              /><span class="service-choice-add__control-label"
-                >сахарозаменитель</span
+            <fieldset class="form-item__info">
+              <h2 class="form-item__title">Подбор программы</h2>
+              <p class="form-item__description">
+                Заполните анкету, и мы подберем<br />
+                программу питания для вашего кота
+              </p>
+
+              <div class="form-item__container form-item__container--name">
+                <label
+                  class="form-item__label form-item__label--name"
+                  for="name"
+                >
+                  Имя:*</label
+                >
+                <input
+                  class="form-item__input form-item__input--name"
+                  type="text"
+                  id="name"
+                  name="appointment-name"
+                  placeholder="Барсик"
+                  required
+                />
+              </div>
+              <div class="form-item__container form-item__container--weight">
+                <label
+                  class="form-item__label form-item__label--weight"
+                  for="weight"
+                >
+                  Вес (кг):*</label
+                >
+                <input
+                  class="form-item__input form-item__input--weight"
+                  type="text"
+                  id="weight"
+                  name="appointment-weight"
+                  placeholder="7"
+                  required
+                />
+              </div>
+              <div class="form-item__container form-item__container--age">
+                <label class="form-item__label form-item__label--age" for="age">
+                  Возраст (лет):</label
+                >
+                <input
+                  class="form-item__input form-item__input--age"
+                  type="text"
+                  id="age"
+                  name="appointment-age"
+                  placeholder="7"
+                  required
+                />
+              </div>
+            </fieldset>
+
+            <fieldset class="form-radio">
+              <h2 class="visually-hidden">Выбор программы</h2>
+              <ul class="form-radio__list">
+                <li class="form-radio__item">
+                  <label class="form-radio__control">
+                    <input
+                      class="visually-hidden form-radio__control-input"
+                      type="radio"
+                      name="service-group"
+                      value="weight-loss"
+                      checked
+                      required
+                    /><span class="form-radio__control-label">Похудение</span>
+                  </label>
+                </li>
+                <li class="form-radio__item">
+                  <label class="form-radio__control">
+                    <input
+                      class="visually-hidden form-radio__control-input"
+                      type="radio"
+                      name="service-group"
+                      value="weight-gain"
+                      required
+                    /><span class="form-radio__control-label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form-radio__item">
+                  <label class="form-radio__control">
+                    <input
+                      class="visually-hidden form-radio__control-input"
+                      type="radio"
+                      name="service-group"
+                      value="advice"
+                      required
+                    /><span class="form-radio__control-label"
+                      >Не знаю (Нужен ваш совет)</span
+                    >
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-contacts">
+              <h2 class="form-contacts__title">
+                Контактные данные<br />
+                (владельца кота)
+              </h2>
+              <div
+                class="form-contacts__container form-contacts__container--email"
               >
-            </label>
-          </li>
-          <li class="service-choice-add__item">
-            <label class="service-choice-add__control">
-              <input
-                class="visually-hidden service-choice-add__control-input"
-                type="checkbox"
-                name="service-group"
-                value="water"
-                required
-              /><span class="service-choice-add__control-label"
-                >питьевая вода</span
+                <label
+                  class="form-contacts__label form-contacts__label--email"
+                  for="contacts-form-email"
+                >
+                  E-mail:*</label
+                >
+                <input
+                  class="form-contacts__input form-contacts__input--email"
+                  type="email"
+                  id="contacts-form-email"
+                  name="email-adress"
+                  placeholder="kuklachev@gmail.com"
+                  required
+                />
+              </div>
+              <div
+                class="form-contacts__item form-contacts__item--phone-number"
               >
-            </label>
-          </li>
-          <li class="service-choice-add__item">
-            <label class="service-choice-add__control">
-              <input
-                class="visually-hidden service-choice-add__control-input"
-                type="checkbox"
-                name="service-group"
-                value="milk"
-                required
-              /><span class="service-choice-add__control-label">молоко</span>
-            </label>
-          </li>
-          <li class="service-choice-add__item">
-            <label class="service-choice-add__control">
-              <input
-                class="visually-hidden service-choice-add__control-input"
-                type="checkbox"
-                name="service-group"
-                value="vitamins"
-                required
-              /><span class="service-choice-add__control-label">витамины</span>
-            </label>
-          </li>
-        </ul>
-        <a class="service-choice-add__link" href="#">отправить заявку</a>
-        <p class="service-choice-add__description">* — Обязательные поля</p>
-      </section>
-      <section class="contacts">
-        <div class="contacts__wrapper">
-          <h2 class="visually hidden">Контакты.</h2>
-          <b class="contacts__description">
-            приглашаем<br />
-            к сотрудничеству<br />
-            дилеров!
-          </b>
-          <p class="contacts__text">
-            ул. Большая<br />
-            Конюшенная, д. 19/8<br />
-            Санкт-Петербург
-          </p>
-          <img
-            class="contacts__map"
-            src="images/map.jpg"
-            width="320"
-            height="362"
-            alt="Расположение на карте."
-          />
+                <label
+                  class="form-contacts__label form-contacts__label--phone-number"
+                  for="phone-number"
+                >
+                  Телефон:*</label
+                >
+                <input
+                  class="form-contacts__input form-contacts__input--phone-number"
+                  type="tel"
+                  id="phone-number"
+                  name="contacts-phone-number"
+                  placeholder="8 (960) 900-60-90"
+                  required
+                />
+              </div>
+            </fieldset>
+            <fieldset class="form-comment">
+              <h2 class="form-comment__title">Комментарий</h2>
+              <textarea
+                class="form-comment__textarea"
+                placeholder="Расскажите обо всех повадках кота"
+                name="comment"
+                id="comment-field"
+              >
+              </textarea>
+            </fieldset>
+            <fieldset class="form-checkbox">
+              <h2 class="form-checkbox__title">Дополнительно</h2>
+              <ul class="form-checkbox__list">
+                <li class="form-checkbox__item">
+                  <label class="form-checkbox__control">
+                    <input
+                      class="visually-hidden form-checkbox__control-input"
+                      type="checkbox"
+                      name="service-group"
+                      value="sweetener"
+                      checked
+                      required
+                    /><span class="form-checkbox__control-label"
+                      >сахарозаменитель</span
+                    >
+                  </label>
+                </li>
+                <li class="form-checkbox__item">
+                  <label class="form-checkbox__control">
+                    <input
+                      class="visually-hidden form-checkbox__control-input"
+                      type="checkbox"
+                      name="service-group"
+                      value="water"
+                      required
+                    /><span class="form-checkbox__control-label"
+                      >питьевая вода</span
+                    >
+                  </label>
+                </li>
+                <li class="form-checkbox__item">
+                  <label class="form-checkbox__control">
+                    <input
+                      class="visually-hidden form-checkbox__control-input"
+                      type="checkbox"
+                      name="service-group"
+                      value="milk"
+                      required
+                    /><span class="form-checkbox__control-label">молоко</span>
+                  </label>
+                </li>
+                <li class="form-checkbox__item">
+                  <label class="form-checkbox__control">
+                    <input
+                      class="visually-hidden form-checkbox__control-input"
+                      type="checkbox"
+                      name="service-group"
+                      value="vitamins"
+                      required
+                    /><span class="form-checkbox__control-label">витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <a class="form-content__link" href="#">отправить заявку</a>
+            <p class="form-content__description-field">* — Обязательные поля</p>
+          </form>
+          <section class="contacts">
+            <div class="contacts__wrapper">
+              <h2 class="visually hidden">Контакты.</h2>
+              <b class="contacts__description">
+                приглашаем<br />
+                к сотрудничеству<br />
+                дилеров!
+              </b>
+              <p class="contacts__text">
+                ул. Большая<br />
+                Конюшенная, д. 19/8<br />
+                Санкт-Петербург
+              </p>
+              <img
+                class="contacts__map"
+                src="images/map.jpg"
+                width="320"
+                height="362"
+                alt="Расположение на карте."
+              />
+            </div>
+          </section>
         </div>
       </section>
     </main>
