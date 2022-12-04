@@ -1,11 +1,36 @@
+.benefits__wrapper {
+  margin: 0;
+  padding: 20px 20px 49px 20px;
+  width: 279px;
+  min-height: 380px;
+}
+
 .benefits__title {
+  margin: 0;
+  margin-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
+}
+
+.benefits__item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.benefits__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-image: url("/source/images/index/benefits/benefits-image-2.svg");
+  background-repeat: no-repeat;
 }
 
 .benefits__description {
-  font-family: "Lato";
+  font-family: @ff-lato;
   color: @dark-grey;
+  margin: 0;
+  padding-left: 88px;
   font-size: 14px;
   line-height: 18px;
 }
+
