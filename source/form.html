@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Кэт энерджи-страница формы</title>
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -106,6 +107,7 @@
             </fieldset>
 
             <fieldset class="form-radio">
+              <legend class="visually-hidden">Цель.</legend>
               <h2 class="visually-hidden">Выбор программы</h2>
               <ul class="form-radio__list">
                 <li class="form-radio__item">
@@ -114,10 +116,10 @@
                       class="visually-hidden form-radio__control-input"
                       type="radio"
                       name="service-group"
-                      value="weight-loss"
                       checked
                       required
-                    /><span class="form-radio__control-label">Похудение</span>
+                    />
+                    <span class="form-radio__control-label">Похудение</span>
                   </label>
                 </li>
                 <li class="form-radio__item">
@@ -251,23 +253,27 @@
                   </label>
                 </li>
               </ul>
+              <a class="form-checkbox__link" href="#">отправить заявку</a>
+              <p class="form-checkbox__description-field">
+                * — Обязательные поля
+              </p>
             </fieldset>
-            <a class="form-content__link" href="#">отправить заявку</a>
-            <p class="form-content__description-field">* — Обязательные поля</p>
           </form>
           <section class="contacts">
             <div class="contacts__wrapper">
-              <h2 class="visually hidden">Контакты.</h2>
-              <b class="contacts__description">
-                приглашаем<br />
-                к сотрудничеству<br />
-                дилеров!
-              </b>
-              <p class="contacts__text">
-                ул. Большая<br />
-                Конюшенная, д. 19/8<br />
-                Санкт-Петербург
-              </p>
+              <div class="contacts__container">
+                <h2 class="visually-hidden">Контакты.</h2>
+                <b class="contacts__description">
+                  приглашаем<br />
+                  к сотрудничеству<br />
+                  дилеров!
+                </b>
+                <p class="contacts__text">
+                  ул. Большая<br />
+                  Конюшенная, д. 19/8<br />
+                  Санкт-Петербург
+                </p>
+              </div>
               <img
                 class="contacts__map"
                 src="images/map.jpg"
@@ -288,8 +294,8 @@
             <img
               class="logo-image-2"
               src="images/logo/logo-2.svg"
-              width="101"
-              height="18"
+              width="128"
+              height="24"
               alt="изображение логотипа «Кэт Энерджи» в виде букв."
             />
           </a>

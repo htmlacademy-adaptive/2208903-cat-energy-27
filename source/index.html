@@ -52,11 +52,13 @@
             <h2 class="visually-hidden">
               Подбор программы питания для вашего питомца.
             </h2>
-            <p class="promo__intro">
-              Функциональное <br />
-              питание для котов
-            </p>
-            <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            <div class="promo__container">
+              <p class="promo__title">
+                Функциональное <br />
+                питание для котов
+              </p>
+              <p class="promo__slogan">Занялся собой? Займись котом!</p>
+            </div>
             <img
               class="promo__image"
               src="images/index-can.jpg"
@@ -67,20 +69,23 @@
             <a class="promo__button" href="#">Подобрать программу</a>
           </header>
         </div>
-        <div class="service">
+      </section>
+      <section class="service">
+        <div class="service__container">
           <h2 class="visually-hidden">Методики работы.</h2>
           <h3 class="service__title">Похудение</h3>
-          <p class="service-description">
+          <p class="service__description">
             Ваш кот весит больше собаки и<br />
             почти утратил способность лазить<br />
-            по деревьям? Пора на диету! Cat Energy Slim поможет вашему<br />
+            по деревьям? Пора на диету! Cat<br />
+            Energy Slim поможет вашему<br />
             питомцу сбросить лишний вес.
           </p>
           <a class="service__link" href="#">каталог slim</a>
         </div>
-        <div class="service">
-          <h3 class="service__title">Набор массы</h3>
-          <p class="service-description">
+        <div class="service__container">
+          <h3 class="service__title service__title--2">Набор массы</h3>
+          <p class="service__description">
             Заработать авторитет среди<br />
             дворовых котов и даже собак?<br />
             Серия Cat Energy Pro поможет<br />
@@ -94,29 +99,29 @@
         <div class="benefits__wrapper">
           <h2 class="benefits__title">Как это работает</h2>
           <ul class="benefits__list">
-            <li class="benefits__item">
-              <p class="benefits-description">
+            <li class="benefits__item benefits__item--1">
+              <p class="benefits__description">
                 Функциональное питание<br />
                 содержит только полезные<br />
                 питательные вещества.
               </p>
             </li>
-            <li class="benefits__item">
-              <p class="benefits-description">
+            <li class="benefits__item benefits__item--2">
+              <p class="benefits__description">
                 Выпускается в виде порошка,<br />
                 который нужно лишь залить<br />
                 кипятком и готово.
               </p>
             </li>
-            <li class="benefits__item">
-              <p class="benefits-description">
+            <li class="benefits__item benefits__item--3">
+              <p class="benefits__description">
                 Замените один-два приема <br />
                 обычной еды на наше<br />
                 функциональное питание.
               </p>
             </li>
-            <li class="benefits__item">
-              <p class="benefits-description">
+            <li class="benefits__item benefits__item--4">
+              <p class="benefits__description">
                 Уже через месяц<br />
                 наслаждайтесь изменениями<br />
                 к лучшему вашего питомца!
@@ -127,42 +132,52 @@
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__description">
-            Борис сбросил 5 кг за 2 месяца, просто<br />
-            заменив свой обычный корм на Cat Energy<br />
-            Slim. Отличный результат без изнуряющих<br />
-            тренировок! При этом он не менял своих<br />
-            привычек и по-прежнему спит по 16 часов<br />
-            в день.
-          </p>
-          <dl class="example__list">
-            <div class="example__item">
-              <dt class="example__number">5 кг</dt>
-              <dd class="example__description">снижение веса</dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__number">60 дней</dt>
-              <dd class="example__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <p class="#">затраты на питание: 15000 руб.</p>
+          <div class="example__container">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__description">
+              Борис сбросил 5 кг за 2 месяца, просто<br />
+              заменив свой обычный корм на Cat Energy<br />
+              Slim. Отличный результат без изнуряющих<br />
+              тренировок! При этом он не менял своих<br />
+              привычек и по-прежнему спит по 16 часов<br />
+              в день.
+            </p>
+            <dl class="example__list">
+              <div class="example__item">
+                <dt class="example__number">5 кг</dt>
+                <dd class="example__description-2">
+                  снижение<br />
+                  веса
+                </dd>
+              </div>
+              <div class="example__item">
+                <dt class="example__number">60 дней</dt>
+                <dd class="example__description-2">
+                  затрачено<br />
+                  времени
+                </dd>
+              </div>
+            </dl>
+            <p class="example__expences">затраты на питание: 15000 руб.</p>
+          </div>
         </div>
       </section>
       <section class="slider"></section>
       <section class="contacts">
         <div class="contacts__wrapper">
-          <h2 class="visually hidden">Контакты.</h2>
-          <b class="contacts__description">
-            приглашаем<br />
-            к сотрудничеству<br />
-            дилеров!
-          </b>
-          <p class="contacts__text">
-            ул. Большая<br />
-            Конюшенная, д. 19/8<br />
-            Санкт-Петербург
-          </p>
+          <div class="contacts__container">
+            <h2 class="visually-hidden">Контакты.</h2>
+            <b class="contacts__description">
+              приглашаем<br />
+              к сотрудничеству<br />
+              дилеров!
+            </b>
+            <p class="contacts__text">
+              ул. Большая<br />
+              Конюшенная, д. 19/8<br />
+              Санкт-Петербург
+            </p>
+          </div>
           <img
             class="contacts__map"
             src="images/map.jpg"
@@ -181,8 +196,8 @@
             <img
               class="logo-image-2"
               src="images/logo/logo-2.svg"
-              width="101"
-              height="18"
+              width="128"
+              height="24"
               alt="изображение логотипа «Кэт Энерджи» в виде букв."
             />
           </a>
