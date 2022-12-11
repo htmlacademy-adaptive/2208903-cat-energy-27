@@ -1,5 +1,6 @@
 .example__wrapper {
   width: 320px;
+  margin: 0 auto;
   background-color: @gray-3;
 }
 
@@ -61,3 +62,46 @@
   margin: 0;
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .example__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: @white;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example__wrapper {
+    width: 1440px;
+    margin: 0 auto;
+    background-color: @gray-3;
+  }
+
+  .example__container {
+    padding: 0 0 0 110px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    width: 435px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+

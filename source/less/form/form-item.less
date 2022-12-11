@@ -1,16 +1,12 @@
 .form-item {
-  width: 320px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-}
-
-.form-item__info {
-  padding: 27px 20px 29px 20px;
 }
 
 .form-item__title {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   margin: 0;
   padding: 0;
   margin-bottom: 37px;
@@ -54,4 +50,67 @@
   border-color: @gray-4;
   margin-bottom: 14px;
   padding-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .form-item__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    margin-bottom: 54px;
+  }
+
+  .form-item__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
+
+  .form-item__info {
+    margin-bottom: 72px;
+  }
+
+  .form-item__label {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-item__input--name {
+    width: 542px;
+    height: 52px;
+    border: 1px solid;
+    border-color: @gray-4;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .form-item__input--weight {
+    width: 515px;
+    height: 52px;
+    border: 1px solid;
+    border-color: @gray-4;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+
+  .form-item__input--age {
+    width: 474px;
+    height: 52px;
+    border: 1px solid;
+    border-color: @gray-4;
+    margin-bottom: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-item__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 80px;
+  }
+
+  .form-item__info {
+    margin-bottom: 69px;
+  }
 }

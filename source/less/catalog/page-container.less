@@ -1,8 +1,23 @@
+
 .page-container__title {
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
-  margin: 0;
+  text-align: center;
   padding: 27px 35px 30px 20px;
   box-sizing: border-box;
+}
+
+@media (min-width: @tablet-width) {
+  .page-container {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
+  .page-container__title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
 }

@@ -1,3 +1,8 @@
+.products__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .products__list {
   margin: 0;
   margin-bottom: 36px;
@@ -5,4 +10,28 @@
 
 .products__item {
   margin-bottom: 19px;
+}
+
+@media (min-width: @tablet-width) {
+  .products__wrapper {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .products__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  .products__item {
+    width: 324px;
+    height: 511px;
+  }
+
+  .product__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

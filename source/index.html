@@ -2,13 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи-главная страница</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo" href="#">
+      <div class="main-header__logo-container">
+        <a class="main-header__logo" href="#">
           <img
             class="logo-image"
             src="images/logo/logo-1.svg"
@@ -17,7 +18,7 @@
             alt="изображение логотипа «Кэт Энерджи» ."
           />
         </a>
-        <a class="main-nav__logo-2" href="#">
+        <a class="main-header__logo-2" href="#">
           <img
             class="logo-image-2"
             src="images/logo/logo-2.svg"
@@ -26,20 +27,24 @@
             alt="изображение логотипа «Кэт Энерджи» в виде букв."
           />
         </a>
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#"> Главная </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#"> Каталог продукции </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#"> Подбор программы </a>
-          </li>
-        </ul>
+      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="#"> Главная </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#"> Каталог продукции </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#"> Подбор программы </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container">
@@ -71,28 +76,30 @@
         </div>
       </section>
       <section class="service">
-        <div class="service__container">
-          <h2 class="visually-hidden">Методики работы.</h2>
-          <h3 class="service__title">Похудение</h3>
-          <p class="service__description">
-            Ваш кот весит больше собаки и<br />
-            почти утратил способность лазить<br />
-            по деревьям? Пора на диету! Cat<br />
-            Energy Slim поможет вашему<br />
-            питомцу сбросить лишний вес.
-          </p>
-          <a class="service__link" href="#">каталог slim</a>
-        </div>
-        <div class="service__container">
-          <h3 class="service__title service__title--2">Набор массы</h3>
-          <p class="service__description">
-            Заработать авторитет среди<br />
-            дворовых котов и даже собак?<br />
-            Серия Cat Energy Pro поможет<br />
-            вашему коту нарастить<br />
-            необходимые мышцы!
-          </p>
-          <a class="service__link" href="#">каталог pro</a>
+        <div class="service__wrapper">
+          <div class="service__container">
+            <h2 class="visually-hidden">Методики работы.</h2>
+            <h3 class="service__title">Похудение</h3>
+            <p class="service__description">
+              Ваш кот весит больше собаки и<br />
+              почти утратил способность лазить<br />
+              по деревьям? Пора на диету! Cat<br />
+              Energy Slim поможет вашему<br />
+              питомцу сбросить лишний вес.
+            </p>
+            <a class="service__link" href="#">каталог slim</a>
+          </div>
+          <div class="service__container">
+            <h3 class="service__title service__title--2">Набор массы</h3>
+            <p class="service__description">
+              Заработать авторитет среди<br />
+              дворовых котов и даже собак?<br />
+              Серия Cat Energy Pro поможет<br />
+              вашему коту нарастить<br />
+              необходимые мышцы!
+            </p>
+            <a class="service__link" href="#">каталог pro</a>
+          </div>
         </div>
       </section>
       <section class="benefits">
@@ -135,11 +142,9 @@
           <div class="example__container">
             <h2 class="example__title">Живой пример</h2>
             <p class="example__description">
-              Борис сбросил 5 кг за 2 месяца, просто<br />
-              заменив свой обычный корм на Cat Energy<br />
-              Slim. Отличный результат без изнуряющих<br />
-              тренировок! При этом он не менял своих<br />
-              привычек и по-прежнему спит по 16 часов<br />
+              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
+              При этом он не менял своих привычек и по-прежнему спит по 16 часов
               в день.
             </p>
             <dl class="example__list">

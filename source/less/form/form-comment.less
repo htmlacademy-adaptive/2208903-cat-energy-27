@@ -5,10 +5,51 @@
 .form-comment__title {
   margin: 0;
   margin-bottom: 38px;
+  font-weight: 400;
 }
 
 .form-comment__textarea {
   width: 280px;
   min-height: 151px;
+  font-size: 24px;
+  line-height: 26px;
   border: 1px solid @gray-4;
+}
+
+@media (min-width: @tablet-width) {
+  .form-comment {
+    width: 631px;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .form-comment__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+
+  .form-comment__textarea {
+    width: 631px;
+    min-height: 174px;
+    font-size: 24px;
+    line-height: 26px;
+    border: 1px solid @gray-4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-comment {
+    width: 1220px;
+    margin-bottom: 65px;
+    padding: 0;
+  }
+
+  .form-comment__textarea {
+    width: 1220px;
+    min-height: 174px;
+    font-size: 24px;
+    line-height: 26px;
+    border: 1px solid @gray-4;
+  }
 }

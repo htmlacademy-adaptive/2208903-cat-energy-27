@@ -1,3 +1,8 @@
+.contacts__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .contacts__container {
   display: flex;
   min-height: 112px;
@@ -17,4 +22,31 @@
   margin: 0;
   width: 139px;
   font-family: @ff-lato;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .contacts__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 199px;
+    width: 708px;
+    padding: 0 70px;
+  }
+
+  .contacts__description {
+    width: 172px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
