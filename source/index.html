@@ -8,26 +8,24 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__logo-container">
-        <a class="main-header__logo" href="#">
-          <img
-            class="logo-image"
-            src="images/logo/logo-1.svg"
-            width="34"
-            height="38"
-            alt="изображение логотипа «Кэт Энерджи» ."
-          />
-        </a>
-        <a class="main-header__logo-2" href="#">
-          <img
-            class="logo-image-2"
-            src="images/logo/logo-2.svg"
-            width="101"
-            height="18"
-            alt="изображение логотипа «Кэт Энерджи» в виде букв."
-          />
-        </a>
-      </div>
+      <a class="main-header__logo" href="#">
+        <img
+          class="logo-image"
+          src="images/logo/logo-1.svg"
+          width="34"
+          height="38"
+          alt="изображение логотипа «Кэт Энерджи» ."
+        />
+      </a>
+      <a class="main-header__logo-2" href="#">
+        <img
+          class="logo-image-2"
+          src="images/logo/logo-2.svg"
+          width="101"
+          height="18"
+          alt="изображение логотипа «Кэт Энерджи» в виде букв."
+        />
+      </a>
       <nav class="main-nav">
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button">
@@ -147,23 +145,28 @@
               При этом он не менял своих привычек и по-прежнему спит по 16 часов
               в день.
             </p>
-            <dl class="example__list">
-              <div class="example__item">
-                <dt class="example__number">5 кг</dt>
-                <dd class="example__description-2">
-                  снижение<br />
-                  веса
-                </dd>
+            <div class="example__box">
+              <dl class="example__list">
+                <div class="example__item">
+                  <dt class="example__number">5 кг</dt>
+                  <dd class="example__description-2">
+                    снижение<br />
+                    веса
+                  </dd>
+                </div>
+                <div class="example__item">
+                  <dt class="example__number">60 дней</dt>
+                  <dd class="example__description-2">
+                    затрачено<br />
+                    времени
+                  </dd>
+                </div>
+              </dl>
+              <div class="example__expences-container">
+                <p class="example__expences">затраты на питание:</p>
+                <p class="example__expences-2">15000 руб.</p>
               </div>
-              <div class="example__item">
-                <dt class="example__number">60 дней</dt>
-                <dd class="example__description-2">
-                  затрачено<br />
-                  времени
-                </dd>
-              </div>
-            </dl>
-            <p class="example__expences">затраты на питание: 15000 руб.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -183,6 +186,8 @@
               Санкт-Петербург
             </p>
           </div>
+        </div>
+        <div class="contacts__map-wrapper">
           <img
             class="contacts__map"
             src="images/map.jpg"

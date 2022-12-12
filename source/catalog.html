@@ -50,6 +50,7 @@
     <main class="main-container">
       <div class="page-container">
         <h1 class="page-container__title">Каталог продукции</h1>
+
         <section class="products">
           <div class="products__wrapper">
             <ul class="products__list">
@@ -333,94 +334,106 @@
                 </div>
                 <a class="product__link-button button" href="#">заказать</a>
               </li>
-            </ul>
-          </div>
-        </section>
-        <section class="product-show">
-          <div class="product-show__wrapper">
-            <p class="product-show__show-more">Показать еще 100500 товаров</p>
-            <p class="product-show__show-more-description">
-              На самом деле вкусов гораздо больше!
-            </p>
-            <button class="product-show__button" type="button">
-              показать все
-            </button>
-          </div>
-        </section>
-        <section class="additional-products">
-          <div class="additional-products__wrapper">
-            <h2 class="additional-products__title">Дополнительные товары</h2>
-            <ul class="additional-products__list">
-              <li class="additional-products__item">
-                <div class="additional-products__container">
-                  <p class="additional-products__value">Сахарозаменитель</p>
-                  <dl class="additional-products__definition">
-                    <dt class="additional-products__term">
-                      1 упаковка (100 г)
-                    </dt>
-                    <dd class="additional-products__description">200 ₽</dd>
-                  </dl>
-                  <a class="additional-products__button button" href="#"
-                    >заказать</a
-                  >
-                </div>
-              </li>
-              <li class="additional-products__item">
-                <div class="additional-products__container">
-                  <p class="additional-products__value">питьевая вода</p>
-                  <dl class="additional-products__definition">
-                    <dt class="additional-products__term">5 литров</dt>
-                    <dd class="additional-products__description">50 ₽</dd>
-                  </dl>
-                  <a class="additional-products__button button" href="#"
-                    >заказать</a
-                  >
-                </div>
-              </li>
-              <li class="additional-products__item">
-                <div class="additional-products__container">
-                  <p class="additional-products__value">молоко</p>
-                  <dl class="additional-products__definition">
-                    <dt class="additional-products__term">1 литр</dt>
-                    <dd class="additional-products__description">300 ₽</dd>
-                  </dl>
-                  <a class="additional-products__button button" href="#"
-                    >заказать</a
-                  >
-                </div>
-              </li>
-              <li class="additional-products__item">
-                <div class="additional-products__container">
-                  <p class="additional-products__value">витамины</p>
-                  <dl class="additional-products__definition">
-                    <dt class="additional-products__term">1 упаковка (30 г)</dt>
-                    <dd class="additional-products__description">300 ₽</dd>
-                  </dl>
-                  <a class="additional-products__button button" href="#"
-                    >заказать</a
-                  >
+              <li class="products__item product">
+                <div class="product__container product__container--show-more">
+                  <div class="product__item-container">
+                    <p
+                      class="product__description product__description--show-more"
+                    >
+                      Показать еще 100500 товаров
+                    </p>
+                    <p
+                      class="product__more-description product__more-description--show-more"
+                    >
+                      На самом деле вкусов гораздо больше!
+                    </p>
+                    <button class="product__show-button" type="button">
+                      показать все
+                    </button>
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
         </section>
-        <section class="gift">
-          <div class="gift__wrapper">
-            <h2 class="visually-hidden">Получите подарок</h2>
-            <img
-              class="gift__image"
-              src="images/catalog/catalog-cat-in-bag.jpg"
-              width="279"
-              height="289"
-              alt="Кот в рюкзаке."
-            />
-            <p class="gift__description">
-              Закажите все<br />
-              и получите чехол для<br />
-              кота в подарок!
-            </p>
-          </div>
-        </section>
+        <div class="target-container">
+          <section class="additional-products">
+            <div class="additional-products__wrapper">
+              <h2 class="additional-products__title">Дополнительные товары</h2>
+              <ul class="additional-products__list">
+                <li class="additional-products__item">
+                  <div class="additional-products__container">
+                    <p class="additional-products__value">Сахарозаменитель</p>
+                    <dl class="additional-products__definition">
+                      <dt class="additional-products__term">
+                        1 упаковка (100 г)
+                      </dt>
+                      <dd class="additional-products__description">200 ₽</dd>
+                    </dl>
+                    <a class="additional-products__button button" href="#"
+                      >заказать</a
+                    >
+                  </div>
+                </li>
+                <li class="additional-products__item">
+                  <div class="additional-products__container">
+                    <p class="additional-products__value">питьевая вода</p>
+                    <dl class="additional-products__definition">
+                      <dt class="additional-products__term">5 литров</dt>
+                      <dd class="additional-products__description">50 ₽</dd>
+                    </dl>
+                    <a class="additional-products__button button" href="#"
+                      >заказать</a
+                    >
+                  </div>
+                </li>
+                <li class="additional-products__item">
+                  <div class="additional-products__container">
+                    <p class="additional-products__value">молоко</p>
+                    <dl class="additional-products__definition">
+                      <dt class="additional-products__term">1 литр</dt>
+                      <dd class="additional-products__description">300 ₽</dd>
+                    </dl>
+                    <a class="additional-products__button button" href="#"
+                      >заказать</a
+                    >
+                  </div>
+                </li>
+                <li class="additional-products__item">
+                  <div class="additional-products__container">
+                    <p class="additional-products__value">витамины</p>
+                    <dl class="additional-products__definition">
+                      <dt class="additional-products__term">
+                        1 упаковка (30 г)
+                      </dt>
+                      <dd class="additional-products__description">300 ₽</dd>
+                    </dl>
+                    <a class="additional-products__button button" href="#"
+                      >заказать</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="gift">
+            <div class="gift__wrapper">
+              <h2 class="visually-hidden">Получите подарок</h2>
+              <img
+                class="gift__image"
+                src="images/catalog/catalog-cat-in-bag.jpg"
+                width="279"
+                height="289"
+                alt="Кот в рюкзаке."
+              />
+              <p class="gift__description">
+                Закажите все<br />
+                и получите чехол для<br />
+                кота в подарок!
+              </p>
+            </div>
+          </section>
+        </div>
         <section class="contacts">
           <div class="contacts__wrapper">
             <div class="contacts__container">
@@ -436,6 +449,8 @@
                 Санкт-Петербург
               </p>
             </div>
+          </div>
+          <div class="contacts__map-wrapper">
             <img
               class="contacts__map"
               src="images/map.jpg"

@@ -5,11 +5,12 @@
 
 .products__list {
   margin: 0;
-  margin-bottom: 36px;
 }
 
 .products__item {
   margin-bottom: 19px;
+  padding: 11px 20px 14px 20px;
+  box-sizing: border-box;
 }
 
 @media (min-width: @tablet-width) {
@@ -26,12 +27,26 @@
 
   .products__item {
     width: 324px;
-    height: 511px;
+    margin: 0;
+    padding: 0 36px 36px 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products__wrapper {
+    width: 1220px;
+    padding: 0 110px;
   }
 
-  .product__container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .products__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 62px 80px;
+  }
+
+  .products__item {
+    width: 324px;
+    margin: 0;
+    padding: 0 38px 40px 39px;
   }
 }

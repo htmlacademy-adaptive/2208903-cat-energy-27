@@ -1,15 +1,11 @@
 .main-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   background-color: @white;
   font-family: @ff-oswald;
   font-weight: 400;
   font-size: 18px;
   line-height: 34px;
-  margin: 0 auto;
-}
-
-.main-header__logo-container {
   margin: 0 auto;
 }
 
@@ -28,17 +24,19 @@
     display: flex;
     align-items: center;
     flex-direction: row;
-  }
-
-  .main-header__logo-container {
-    display: flex;
-    align-items: center;
-    min-width: 180px;
-    min-height: 100px;
     margin: 0 auto;
   }
 
   .main-header__logo {
     margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-header {
+    width: 1200px;
+    padding: 0 110px;
+    margin: 0 auto;
+    justify-content: space-between;
   }
 }

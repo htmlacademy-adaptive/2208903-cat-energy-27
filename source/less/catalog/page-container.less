@@ -9,15 +9,19 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-container {
-    width: 708px;
-    padding: 0 30px;
-    margin: 0 auto;
-  }
-
   .page-container__title {
     font-size: 60px;
     line-height: 60px;
+    width: 708px;
+    margin: 0 auto;
+    margin-bottom: 82px;
     text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-container__title {
+    width: 1220px;
+    margin-bottom: 84px;
   }
 }

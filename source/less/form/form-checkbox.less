@@ -51,7 +51,11 @@
   .form-checkbox__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 0 64px;
+    gap: 32px 64px;
+  }
+
+  .form-checkbox__item:not(:last-child) {
+    margin: 0;
   }
 
   .form-checkbox__control-label {
