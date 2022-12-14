@@ -1,6 +1,45 @@
+.target-container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.target-container__title {
+  font-family: @ff-oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 49px;
+}
+
+@media (min-width: @tablet-width) {
+  .target-container {
+    width: 708px;
+    padding: 0 30px;
+  }
+
+  .target-container__title {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    margin-left: 42px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .target-container {
+    width: 1200px;
+    padding: 0 110px;
     display: grid;
     grid-template-columns: 894px 245px;
+    gap: 81px 79px;
+    margin-bottom: 76px;
+  }
+
+  .target-container__title {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    margin: 0;
   }
 }
