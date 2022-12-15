@@ -13,6 +13,7 @@
 }
 
 .service__title {
+  position: relative;
   display: flex;
   align-items: center;
   font-size: 24px;
@@ -26,7 +27,19 @@
 
 .service__title::before {
   display: inline-block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url("../images/index/service/service-circle.svg");
+  background-repeat: no-repeat;
   margin-right: 19px;
+}
+
+.service__title::after {
+  position: absolute;
+  top: -5px;
+  left: 7px;
+  display: inline-block;
   content: "";
   width: 50px;
   height: 53px;
@@ -34,9 +47,11 @@
   background-repeat: no-repeat;
 }
 
-.service__title--2::before {
+.service__title--2::after {
+  position: absolute;
+  top: 11px;
+  left: -9px;
   display: inline-block;
-  margin-right: 11px;
   content: "";
   width: 67px;
   height: 50px;

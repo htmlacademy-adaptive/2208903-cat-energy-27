@@ -1,17 +1,12 @@
 
 .main-nav__list {
-  display: none;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: 0 auto;
   padding: 0;
   text-transform: uppercase;
 }
-
-.main-nav__button {
-  background-color: @white;
-  border-color: transparent;
-}
-
 
 @media (min-width: @tablet-width) {
   .main-nav__wrapper {
@@ -29,10 +24,6 @@
     width: 534px;
     margin: 0;
     padding: 0;
-  }
-
-  .main-nav__toggle {
-    display: none;
   }
 }
 

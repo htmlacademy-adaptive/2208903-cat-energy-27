@@ -8,38 +8,40 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="#">
-        <img
-          class="logo-image"
-          src="images/logo/logo-1.svg"
-          width="34"
-          height="38"
-          alt="изображение логотипа «Кэт Энерджи» ."
-        />
-      </a>
-      <a class="main-header__logo-2" href="#">
-        <img
-          class="logo-image-2"
-          src="images/logo/logo-2.svg"
-          width="101"
-          height="18"
-          alt="изображение логотипа «Кэт Энерджи» в виде букв."
-        />
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="index.html">
+          <img
+            class="logo-image"
+            src="images/logo/logo-1.svg"
+            width="34"
+            height="38"
+            alt="изображение логотипа «Кэт Энерджи» ."
+          />
+        </a>
+        <a class="main-header__logo-2" href="index.html">
+          <img
+            class="logo-image-2"
+            src="images/logo/logo-2.svg"
+            width="101"
+            height="18"
+            alt="изображение логотипа «Кэт Энерджи» в виде букв."
+          />
+        </a>
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
+      </div>
+      <nav class="main-nav">
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="#"> Главная </a>
+              <a class="site-list__link" href="index.html"> Главная </a>
             </li>
             <li class="site-list__item">
               <a class="site-list__link" href="#"> Каталог продукции </a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#"> Подбор программы </a>
+              <a class="site-list__link" href="form.html"> Подбор программы </a>
             </li>
           </ul>
         </div>
@@ -47,9 +49,9 @@
     </header>
     <main class="main-container">
       <div class="page-container">
-        <h1 class="page-container__title">Каталог продукции</h1>
         <section class="products">
           <div class="products__wrapper">
+            <h1 class="products__title">Каталог продукции</h1>
             <ul class="products__list">
               <li class="products__item product">
                 <div class="product__container">
@@ -331,7 +333,7 @@
                 </div>
                 <a class="product__link-button button" href="#">заказать</a>
               </li>
-              <li class="products__item product">
+              <li class="products__item product product--show-more">
                 <div class="product__container product__container--show-more">
                   <div class="product__item-container">
                     <p
@@ -353,68 +355,70 @@
             </ul>
           </div>
         </section>
-        <div class="target-container">
-          <h2 class="target-container__title">Дополнительные товары</h2>
-          <section class="additional-products">
-            <ul class="additional-products__list">
-              <li class="additional-products__item">
-                <div class="additional-products__container">
-                  <p class="additional-products__value">Сахарозаменитель</p>
-                  <p class="additional-products__term">1 упаковка (100 г)</p>
-                  <p class="additional-products__description">200 ₽</p>
-                  <a class="additional-products__button button" href="#"
-                    >заказать</a
-                  >
-                </div>
-              </li>
-              <li class="additional-products__item">
-                <div class="additional-products__container">
-                  <p class="additional-products__value">питьевая вода</p>
-                  <p class="additional-products__term">5 литров</p>
-                  <p class="additional-products__description">50 ₽</p>
-                  <a class="additional-products__button button" href="#"
-                    >заказать</a
-                  >
-                </div>
-              </li>
-              <li class="additional-products__item">
-                <div class="additional-products__container">
-                  <p class="additional-products__value">молоко</p>
-                  <p class="additional-products__term">1 литр</p>
-                  <p class="additional-products__description">300 ₽</p>
-                  <a class="additional-products__button button" href="#"
-                    >заказать</a
-                  >
-                </div>
-              </li>
-              <li class="additional-products__item">
-                <div class="additional-products__container">
-                  <p class="additional-products__value">витамины</p>
-                  <p class="additional-products__term">1 упаковка (30 г)</p>
-                  <p class="additional-products__description">300 ₽</p>
-                  <a class="additional-products__button button" href="#"
-                    >заказать</a
-                  >
-                </div>
-              </li>
-            </ul>
-          </section>
-          <section class="gift">
-            <h2 class="visually-hidden">Получите подарок</h2>
-            <img
-              class="gift__image"
-              src="images/catalog/catalog-cat-in-bag.jpg"
-              width="279"
-              height="289"
-              alt="Кот в рюкзаке."
-            />
-            <p class="gift__description">
-              Закажите все<br />
-              и получите чехол для<br />
-              кота в подарок!
-            </p>
-          </section>
-        </div>
+        <section class="target-container">
+          <div class="target-container__wrapper">
+            <h2 class="target-container__title">Дополнительные товары</h2>
+            <div class="additional-products">
+              <ul class="additional-products__list">
+                <li class="additional-products__item">
+                  <div class="additional-products__container">
+                    <p class="additional-products__value">Сахарозаменитель</p>
+                    <p class="additional-products__term">1 упаковка (100 г)</p>
+                    <p class="additional-products__description">200 ₽</p>
+                    <a class="additional-products__button button" href="#"
+                      >заказать</a
+                    >
+                  </div>
+                </li>
+                <li class="additional-products__item">
+                  <div class="additional-products__container">
+                    <p class="additional-products__value">питьевая вода</p>
+                    <p class="additional-products__term">5 литров</p>
+                    <p class="additional-products__description">50 ₽</p>
+                    <a class="additional-products__button button" href="#"
+                      >заказать</a
+                    >
+                  </div>
+                </li>
+                <li class="additional-products__item">
+                  <div class="additional-products__container">
+                    <p class="additional-products__value">молоко</p>
+                    <p class="additional-products__term">1 литр</p>
+                    <p class="additional-products__description">300 ₽</p>
+                    <a class="additional-products__button button" href="#"
+                      >заказать</a
+                    >
+                  </div>
+                </li>
+                <li class="additional-products__item">
+                  <div class="additional-products__container">
+                    <p class="additional-products__value">витамины</p>
+                    <p class="additional-products__term">1 упаковка (30 г)</p>
+                    <p class="additional-products__description">300 ₽</p>
+                    <a class="additional-products__button button" href="#"
+                      >заказать</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="gift">
+              <h2 class="visually-hidden">Получите подарок</h2>
+              <img
+                class="gift__image"
+                src="images/catalog/catalog-cat-in-bag.jpg"
+                width="279"
+                height="289"
+                alt="Кот в рюкзаке."
+              />
+              <p class="gift__description">
+                Закажите все<br />
+                и получите чехол для<br />
+                кота в подарок!
+              </p>
+            </div>
+          </div>
+        </section>
         <section class="contacts">
           <div class="contacts__wrapper">
             <div class="contacts__container">
