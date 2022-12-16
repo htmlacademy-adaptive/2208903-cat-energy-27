@@ -2,13 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи-страница формы</title>
     <link href="css/style.css" rel="stylesheet" />
   </head>
   <body class="page__body">
     <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-nav__logo" href="#">
+      <div class="main-header__wrapper">
+        <a class="main-header__logo" href="index.html">
           <img
             class="logo-image"
             src="images/logo/logo-1.svg"
@@ -17,7 +18,7 @@
             alt="изображение логотипа «Кэт Энерджи» ."
           />
         </a>
-        <a class="main-nav__logo-2" href="#">
+        <a class="main-header__logo-2" href="index.html">
           <img
             class="logo-image-2"
             src="images/logo/logo-2.svg"
@@ -26,168 +27,181 @@
             alt="изображение логотипа «Кэт Энерджи» в виде букв."
           />
         </a>
-        <button class="main-nav__toggle" type="button">
+        <button class="main-header__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link" href="#"> Главная </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#"> Каталог продукции </a>
-          </li>
-          <li class="site-list__item">
-            <a class="site-list__link" href="#"> Подбор программы </a>
-          </li>
-        </ul>
+      </div>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a class="site-list__link" href="index.html"> Главная </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#"> Подбор программы </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main class="main-container">
       <section class="form-content">
         <div class="form-content__wrapper">
           <h1 class="visually-hidden">Заполните данные</h1>
-
+          <h2 class="form-item__title">Подбор программы</h2>
+          <p class="form-item__description">
+            Заполните анкету, и мы подберем<br />
+            программу питания для вашего кота
+          </p>
           <form
             class="form-item"
             action="https://echo.htmlacademy.ru/"
             method="post"
           >
-            <fieldset class="form-item__info">
-              <h2 class="form-item__title">Подбор программы</h2>
-              <p class="form-item__description">
-                Заполните анкету, и мы подберем<br />
-                программу питания для вашего кота
-              </p>
+            <div class="form-item__box">
+              <fieldset class="form-item__info">
+                <div class="form-item__container form-item__container--name">
+                  <label
+                    class="form-item__label form-item__label--name"
+                    for="name"
+                  >
+                    Имя:*</label
+                  >
+                  <input
+                    class="form-item__input form-item__input--name"
+                    type="text"
+                    id="name"
+                    name="appointment-name"
+                    placeholder="Барсик"
+                    required
+                  />
+                </div>
+                <div class="form-item__container form-item__container--weight">
+                  <label
+                    class="form-item__label form-item__label--weight"
+                    for="weight"
+                  >
+                    Вес (кг):*</label
+                  >
+                  <input
+                    class="form-item__input form-item__input--weight"
+                    type="text"
+                    id="weight"
+                    name="appointment-weight"
+                    placeholder="7"
+                    required
+                  />
+                </div>
+                <div class="form-item__container form-item__container--age">
+                  <label
+                    class="form-item__label form-item__label--age"
+                    for="age"
+                  >
+                    Возраст (лет):</label
+                  >
+                  <input
+                    class="form-item__input form-item__input--age"
+                    type="text"
+                    id="age"
+                    name="appointment-age"
+                    placeholder="7"
+                    required
+                  />
+                </div>
+              </fieldset>
 
-              <div class="form-item__container form-item__container--name">
-                <label
-                  class="form-item__label form-item__label--name"
-                  for="name"
-                >
-                  Имя:*</label
-                >
-                <input
-                  class="form-item__input form-item__input--name"
-                  type="text"
-                  id="name"
-                  name="appointment-name"
-                  placeholder="Барсик"
-                  required
-                />
-              </div>
-              <div class="form-item__container form-item__container--weight">
-                <label
-                  class="form-item__label form-item__label--weight"
-                  for="weight"
-                >
-                  Вес (кг):*</label
-                >
-                <input
-                  class="form-item__input form-item__input--weight"
-                  type="text"
-                  id="weight"
-                  name="appointment-weight"
-                  placeholder="7"
-                  required
-                />
-              </div>
-              <div class="form-item__container form-item__container--age">
-                <label class="form-item__label form-item__label--age" for="age">
-                  Возраст (лет):</label
-                >
-                <input
-                  class="form-item__input form-item__input--age"
-                  type="text"
-                  id="age"
-                  name="appointment-age"
-                  placeholder="7"
-                  required
-                />
-              </div>
-            </fieldset>
-
-            <fieldset class="form-radio">
-              <legend class="visually-hidden">Цель.</legend>
-              <h2 class="visually-hidden">Выбор программы</h2>
-              <ul class="form-radio__list">
-                <li class="form-radio__item">
-                  <label class="form-radio__control">
-                    <input
-                      class="visually-hidden form-radio__control-input"
-                      type="radio"
-                      name="service-group"
-                      checked
-                      required
-                    />
-                    <span class="form-radio__control-label">Похудение</span>
-                  </label>
-                </li>
-                <li class="form-radio__item">
-                  <label class="form-radio__control">
-                    <input
-                      class="visually-hidden form-radio__control-input"
-                      type="radio"
-                      name="service-group"
-                      value="weight-gain"
-                      required
-                    /><span class="form-radio__control-label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="form-radio__item">
-                  <label class="form-radio__control">
-                    <input
-                      class="visually-hidden form-radio__control-input"
-                      type="radio"
-                      name="service-group"
-                      value="advice"
-                      required
-                    /><span class="form-radio__control-label"
-                      >Не знаю (Нужен ваш совет)</span
-                    >
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+              <fieldset class="form-radio">
+                <legend class="visually-hidden">Цель.</legend>
+                <h2 class="visually-hidden">Выбор программы</h2>
+                <ul class="form-radio__list">
+                  <li class="form-radio__item">
+                    <label class="form-radio__control">
+                      <input
+                        class="visually-hidden form-radio__control-input"
+                        type="radio"
+                        name="service-group"
+                        checked
+                        required
+                      />
+                      <span class="form-radio__control-label">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="form-radio__item">
+                    <label class="form-radio__control">
+                      <input
+                        class="visually-hidden form-radio__control-input"
+                        type="radio"
+                        name="service-group"
+                        value="weight-gain"
+                        required
+                      /><span class="form-radio__control-label"
+                        >Набор массы</span
+                      >
+                    </label>
+                  </li>
+                  <li class="form-radio__item">
+                    <label class="form-radio__control">
+                      <input
+                        class="visually-hidden form-radio__control-input"
+                        type="radio"
+                        name="service-group"
+                        value="advice"
+                        required
+                      /><span class="form-radio__control-label"
+                        >Не знаю (Нужен ваш совет)</span
+                      >
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
             <fieldset class="form-contacts">
               <h2 class="form-contacts__title">
                 Контактные данные<br />
                 (владельца кота)
               </h2>
-              <div
-                class="form-contacts__container form-contacts__container--email"
-              >
-                <label
-                  class="form-contacts__label form-contacts__label--email"
-                  for="contacts-form-email"
+              <div class="form-contacts__box">
+                <div
+                  class="form-contacts__container form-contacts__container--email"
                 >
-                  E-mail:*</label
+                  <label
+                    class="form-contacts__label form-contacts__label--email"
+                    for="contacts-form-email"
+                  >
+                    E-mail:*</label
+                  >
+                  <input
+                    class="form-contacts__input form-contacts__input--email"
+                    type="email"
+                    id="contacts-form-email"
+                    name="email-adress"
+                    placeholder="kuklachev@gmail.com"
+                    required
+                  />
+                </div>
+                <div
+                  class="form-contacts__item form-contacts__item--phone-number"
                 >
-                <input
-                  class="form-contacts__input form-contacts__input--email"
-                  type="email"
-                  id="contacts-form-email"
-                  name="email-adress"
-                  placeholder="kuklachev@gmail.com"
-                  required
-                />
-              </div>
-              <div
-                class="form-contacts__item form-contacts__item--phone-number"
-              >
-                <label
-                  class="form-contacts__label form-contacts__label--phone-number"
-                  for="phone-number"
-                >
-                  Телефон:*</label
-                >
-                <input
-                  class="form-contacts__input form-contacts__input--phone-number"
-                  type="tel"
-                  id="phone-number"
-                  name="contacts-phone-number"
-                  placeholder="8 (960) 900-60-90"
-                  required
-                />
+                  <label
+                    class="form-contacts__label form-contacts__label--phone-number"
+                    for="phone-number"
+                  >
+                    Телефон:*</label
+                  >
+                  <input
+                    class="form-contacts__input form-contacts__input--phone-number"
+                    type="tel"
+                    id="phone-number"
+                    name="contacts-phone-number"
+                    placeholder="8 (960) 900-60-90"
+                    required
+                  />
+                </div>
               </div>
             </fieldset>
             <fieldset class="form-comment">
@@ -202,6 +216,7 @@
             </fieldset>
             <fieldset class="form-checkbox">
               <h2 class="form-checkbox__title">Дополнительно</h2>
+
               <ul class="form-checkbox__list">
                 <li class="form-checkbox__item">
                   <label class="form-checkbox__control">
@@ -253,37 +268,41 @@
                   </label>
                 </li>
               </ul>
-              <a class="form-checkbox__link" href="#">отправить заявку</a>
-              <p class="form-checkbox__description-field">
-                * — Обязательные поля
-              </p>
-            </fieldset>
-          </form>
-          <section class="contacts">
-            <div class="contacts__wrapper">
-              <div class="contacts__container">
-                <h2 class="visually-hidden">Контакты.</h2>
-                <b class="contacts__description">
-                  приглашаем<br />
-                  к сотрудничеству<br />
-                  дилеров!
-                </b>
-                <p class="contacts__text">
-                  ул. Большая<br />
-                  Конюшенная, д. 19/8<br />
-                  Санкт-Петербург
+              <div class="form-checkbox__container">
+                <a class="form-checkbox__link" href="#">отправить заявку</a>
+                <p class="form-checkbox__description-field">
+                  * — Обязательные поля
                 </p>
               </div>
-              <img
-                class="contacts__map"
-                src="images/map.jpg"
-                width="320"
-                height="362"
-                alt="Расположение на карте."
-              />
-            </div>
-          </section>
+            </fieldset>
+          </form>
         </div>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <div class="contacts__container">
+              <h2 class="visually-hidden">Контакты.</h2>
+              <b class="contacts__description">
+                приглашаем<br />
+                к сотрудничеству<br />
+                дилеров!
+              </b>
+              <p class="contacts__text">
+                ул. Большая<br />
+                Конюшенная, д. 19/8<br />
+                Санкт-Петербург
+              </p>
+            </div>
+          </div>
+          <div class="contacts__map-wrapper">
+            <img
+              class="contacts__map"
+              src="images/map.jpg"
+              width="320"
+              height="362"
+              alt="Расположение на карте."
+            />
+          </div>
+        </section>
       </section>
     </main>
     <footer class="main-footer">

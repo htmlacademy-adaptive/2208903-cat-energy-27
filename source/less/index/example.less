@@ -1,6 +1,11 @@
+.example {
+  background-color: @gray-3;
+}
+
+
 .example__wrapper {
   width: 320px;
-  background-color: @gray-3;
+  margin: 0 auto;
 }
 
 .example__container {
@@ -36,7 +41,7 @@
 .example__item {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 
 .example__item:not(:last-child) {
@@ -57,7 +62,144 @@
   color: @dark-grey;
 }
 
+.example__expences-container {
+  display: flex;
+  justify-content: center;
+}
+
 .example__expences {
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
   text-align: center;
+  text-transform: uppercase;
+}
+
+.example__expences-2 {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__image-container {
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .example {
+    background-color: @white;
+   }
+
+  .example__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+    background-color: @white;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .example__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .example__list {
+    margin: 0;
+    margin-bottom: 55px;
+  }
+
+  .example__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .example__description-2 {
+    width: 174px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .example__expences-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .example__expences {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__expences-2 {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .example__image-container {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .example {
+    background-color: @gray-3;
+  }
+
+  .example__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+    background-color: @gray-3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 224px;
+  }
+
+  .example__container {
+    padding-bottom: 75px;
+  }
+
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .example__description {
+    width: 435px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .example__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .example__list {
+    display: grid;
+    grid-template-columns: 162px 162px;
+    gap: 55px 42px;
+  }
+
+  .example__expences-container {
+    display: grid;
+    grid-template-columns: 174px 90px;
+    gap: 0 63px;
+  }
 }
