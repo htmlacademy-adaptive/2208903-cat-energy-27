@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+.form-item__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .form-item__title {
   font-size: 36px;
   line-height: 36px;
@@ -15,6 +21,8 @@
 
 .form-item__description {
   margin: 0;
+  font-size: 14px;
+  line-height: 18px;
   margin-bottom: 39px;
   text-transform: uppercase;
 }
@@ -39,6 +47,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .form-item__wrapper {
+    width: 708px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+
   .form-item__title {
     font-size: 60px;
     line-height: 60px;
@@ -69,7 +83,6 @@
     margin-bottom: 20px;
     padding-left: 20px;
   }
-
 }
 
 @media (min-width: @desktop-width) {

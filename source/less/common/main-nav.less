@@ -28,8 +28,16 @@
 }
 
 @media (min-width: @desktop-width) {
+  .main-nav {
+    z-index: 2;
+  }
+
   .main-nav__wrapper {
     width: 500px;
     justify-content: space-between;
+  }
+
+  .main-nav__list {
+    z-index: 1;
   }
 }

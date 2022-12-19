@@ -1,8 +1,24 @@
+.contacts {
+  background-color: @basic-grey;
+  position: relative;
+  z-index: -1;
+}
+
+.contacts::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
+  width: 56px;
+  height: 52px;
+  background-image: url("/source/images/index/contacts/map-pin.svg");
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
 .contacts__wrapper {
   width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-  background-color: @white;
 }
 
 .contacts__container {
@@ -28,7 +44,9 @@
   color: @dark-grey;
 }
 
-.contacts__map {
+iframe {
+  border: 0;
+  display: block;
   width: 100%;
 }
 
@@ -55,6 +73,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  iframe {
+    height: 400px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -73,5 +95,6 @@
 
   .contacts__container {
     padding: 60px 80px 58px 80px;
+    background-color: @white;
   }
 }

@@ -1,0 +1,46 @@
+.line__container {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.line__title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+
+@media (min-width: @tablet-width) {
+  .line {
+    position: relative;
+  }
+
+  .line::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    height: 2px;
+    width: 100%;
+    background-color: @green;
+    z-index: -1;
+  }
+
+  .line__container {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .line__title {
+    position: relative;
+    display: inline-block;
+    background-color: @white;
+    padding: 0 40px;
+    margin-left: -40px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 54px;
+    font-weight: 400;
+  }
+}
