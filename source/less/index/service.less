@@ -79,16 +79,24 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .service__link::after {
   position: absolute;
   display: inline-block;
   top: 6px;
-  right: -82px;
+  right: -35px;
   content: "";
-  width: 67px;
-  height: 50px;
+  width: 24px;
+  height: 12px;
   background-image: url("../images/index/service/service-image-arrow.svg");
   background-repeat: no-repeat;
 }
@@ -108,6 +116,10 @@
     background-color: @basic-grey;
   }
 
+  .service__description br {
+    display: none;
+  }
+
   .service__title {
     font-size: 36px;
     line-height: 36px;
@@ -118,6 +130,11 @@
     font-size: 16px;
     line-height: 24px;
     border: none;
+  }
+
+  .service__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

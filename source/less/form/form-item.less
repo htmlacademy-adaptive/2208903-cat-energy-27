@@ -29,6 +29,8 @@
 
 .form-item__container {
   display: flex;
+  align-items: center;
+  margin-bottom: 14px;
 }
 
 .form-item__label {
@@ -42,8 +44,15 @@
   height: 45px;
   border: 1px solid;
   border-color: @gray-4;
-  margin-bottom: 14px;
   padding-left: 20px;
+
+  &:hover {
+    border-color: @special-grey;
+  }
+
+  &:focus {
+    outline: 2px solid @dark-grey;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -80,12 +89,16 @@
     height: 45px;
     border: 1px solid;
     border-color: @gray-4;
-    margin-bottom: 20px;
     padding-left: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .form-item__wrapper {
+    width: 1220px;
+    padding: 0 110px;
+  }
+
   .form-item__box {
     display: grid;
     grid-template-columns: 1fr 1fr;

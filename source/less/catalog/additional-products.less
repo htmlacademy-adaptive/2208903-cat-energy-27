@@ -73,22 +73,33 @@
     gap: 25px 49px;
     margin: 0;
     padding: 26px 38px 28px 38px;
+    border: none;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid @special-grey;
+    }
   }
 
   .additional-products__value {
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .additional-products__term {
     margin: 0;
     grid-column: 2/3;
     grid-row: 1/2;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-products__description {
     margin: 0;
     grid-column: 3/4;
     grid-row: 1/2;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .additional-products__button {
@@ -109,11 +120,13 @@
     grid-template-rows: min-content min-content;
     gap: 0 40px;
     padding: 0;
+    padding-top: 15px;
     padding-bottom: 17px;
-  }
+    border-bottom: 1px solid @special-grey;
 
-  .additional-products__item:not(:last-child) {
-    margin-bottom: 25px;
+    &:first-child {
+      border-top: 1px solid @special-grey;
+    }
   }
 
   .additional-products__value {

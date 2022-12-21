@@ -36,8 +36,6 @@
   transform: rotate(90deg);
 }
 
-
-
 .product__item-container {
   width: 140px;
 }
@@ -86,6 +84,15 @@
   background-color: @green;
   text-transform: uppercase;
   padding: 10px 109px;
+
+  &:hover {
+    background-color: @green-2;
+  }
+
+  &:active {
+    color: @white30;
+    background-color: @green-2;
+  }
 }
 
 .product__container--show-more {
@@ -190,6 +197,15 @@
   .product__show-button {
     width: 249px;
     padding: 20px 79px;
+
+    &:hover {
+      background-color: @gray-2;
+    }
+
+    &:active {
+      color: @dark-grey-30;
+      background-color: @gray-2;
+    }
   }
 }
 

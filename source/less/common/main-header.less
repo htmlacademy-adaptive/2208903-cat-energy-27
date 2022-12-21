@@ -4,15 +4,15 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 34px;
-  margin: 0 auto;
   margin-bottom: 21px;
-  width: 280px;
-  padding: 0 20px;
   min-height: 66px;
 }
 
 .main-header__wrapper {
   position: relative;
+  width: 280px;
+  padding: 0 20px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   min-height: 65px;
@@ -53,9 +53,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 768px;
-    margin: 0 auto;
     min-height: 100px;
+  }
+
+  .main-header__box {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: grid;
+    grid-template-columns: 174px 1fr;
+    gap: 0 57px;
+    align-items: center;
+  }
+
+  .main-header__wrapper {
+    padding: 0;
   }
 
   .main-header__logo {
@@ -69,9 +81,17 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    width: 1200px;
-    padding: 0 110px;
-    margin: 0 auto;
     min-height: 133px;
+    background-color: inherit;
+  }
+
+  .main-header__box {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0 110px;
+    display: grid;
+    grid-template-columns: 201px 1fr;
+    gap: 0 521px;
+    align-items: center;
   }
 }
