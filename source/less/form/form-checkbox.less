@@ -10,11 +10,23 @@
 
 .form-checkbox__title {
   display: inline-block;
+  padding-right: 21px;
+  background-color: @white;
   margin: 0;
   margin-bottom: 34px;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+}
+
+.form-checkbox__title::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  height: 2px;
+  width: 100%;
+  background-color: @green;
+  z-index: -1;
 }
 
 .form-checkbox__list {
@@ -113,6 +125,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 57px;
+  }
+
+  .form-checkbox__title::before {
+    width: 0;
   }
 
   .form-checkbox__list {

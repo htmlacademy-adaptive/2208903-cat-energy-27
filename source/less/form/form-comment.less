@@ -10,9 +10,21 @@
 
 .form-comment__title {
   display: inline-block;
+  padding-right: 21px;
+  background-color: @white;
   margin: 0;
   margin-bottom: 38px;
   font-weight: 400;
+}
+
+.form-comment__title::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  height: 2px;
+  width: 100%;
+  background-color: @green;
+  z-index: -1;
 }
 
 .form-comment__textarea {
@@ -48,6 +60,10 @@
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
+  }
+
+  .form-comment__title::before {
+    width: 0;
   }
 
   .form-comment__textarea {

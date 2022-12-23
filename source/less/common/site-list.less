@@ -45,6 +45,8 @@
   .site-list__link {
     font-size: 20px;
     line-height: 30px;
+    padding: 0;
+    padding-bottom: 8px;
   }
 
   .site-list__link--curent::before {
@@ -54,6 +56,15 @@
     width: 100%;
     bottom: 0;
     background-color: @white;
+  }
+
+  .site-list__link--curent-2::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    background-color: @green;
   }
 
   .site-list__link--change {

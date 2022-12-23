@@ -8,46 +8,53 @@
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img
-            class="logo-image"
-            src="images/logo/logo-1.svg"
-            width="34"
-            height="38"
-            alt="изображение логотипа «Кэт Энерджи» ."
-          />
-        </a>
-        <a class="main-header__logo-2" href="index.html">
-          <img
-            class="logo-image-2"
-            src="images/logo/logo-2.svg"
-            width="101"
-            height="18"
-            alt="изображение логотипа «Кэт Энерджи» в виде букв."
-          />
-        </a>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню.</span>
-        </button>
-      </div>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link" href="index.html"> Главная </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link site-list__link--curent" href="#">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html"> Подбор программы </a>
-            </li>
-          </ul>
+      <div class="main-header__box main-header__box--index">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo" href="index.html">
+            <img
+              class="logo-image"
+              src="images/logo/logo-1.svg"
+              width="34"
+              height="38"
+              alt="изображение логотипа «Кэт Энерджи» ."
+            />
+          </a>
+          <a class="main-header__logo-2" href="index.html">
+            <img
+              class="logo-image-2"
+              src="images/logo/logo-2.svg"
+              width="101"
+              height="18"
+              alt="изображение логотипа «Кэт Энерджи» в виде букв."
+            />
+          </a>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню.</span>
+          </button>
         </div>
-      </nav>
+        <nav class="main-nav main-nav--closed main-nav--open">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link" href="index.html"> Главная </a>
+              </li>
+              <li class="site-list__item site-list__item--active">
+                <a
+                  class="site-list__link site-list__link--curent site-list__link--curent-2"
+                  href="#"
+                >
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <main class="main-container">
       <div class="page-container">
