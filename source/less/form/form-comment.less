@@ -1,15 +1,34 @@
 .form-comment {
-  padding: 0 20px 22px 20px;
+  position: relative;
+}
+
+.form-comment__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .form-comment__title {
+  display: inline-block;
+  padding-right: 21px;
+  background-color: @white;
   margin: 0;
   margin-bottom: 38px;
   font-weight: 400;
 }
 
+.form-comment__title::before {
+  content: "";
+  position: absolute;
+  top: 9px;
+  height: 2px;
+  width: 100%;
+  background-color: @green;
+  z-index: -1;
+}
+
 .form-comment__textarea {
-  width: 280px;
+  width: 100%;
   min-height: 151px;
   font-size: 24px;
   line-height: 26px;
@@ -17,20 +36,37 @@
 }
 
 @media (min-width: @tablet-width) {
-  .form-comment {
-    width: 631px;
+  .form-comment::before {
+    content: "";
+    position: absolute;
+    top: 22px;
+    height: 2px;
+    width: 100%;
+    background-color: @green;
+    z-index: -1;
+  }
+
+  .form-comment__wrapper {
+    width: 708px;
+    padding: 0 30px;
     margin-bottom: 65px;
-    padding: 0;
   }
 
   .form-comment__title {
+    padding-left: 39px;
+    padding-right: 38px;
+    margin-left: -39px;
+    background-color: @white;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
   }
 
+  .form-comment__title::before {
+    width: 0;
+  }
+
   .form-comment__textarea {
-    width: 631px;
     min-height: 174px;
     font-size: 24px;
     line-height: 26px;
@@ -39,14 +75,13 @@
 }
 
 @media (min-width: @desktop-width) {
-  .form-comment {
+  .form-comment__wrapper {
     width: 1220px;
     margin-bottom: 65px;
-    padding: 0;
+    padding: 0 110px;
   }
 
   .form-comment__textarea {
-    width: 1220px;
     min-height: 174px;
     font-size: 24px;
     line-height: 26px;

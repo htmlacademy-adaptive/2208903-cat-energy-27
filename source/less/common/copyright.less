@@ -1,5 +1,7 @@
 
 .copyright__link {
+  display: flex;
+  align-items: center;
   font-family: @ff-lato;
   font-size: 16px;
   line-height: 20px;
@@ -8,4 +10,13 @@
 
 .copyright__icon {
   margin-left: 141px;
+  fill: @special-grey-2;
+}
+
+.copyright__link:hover .copyright__icon {
+  fill: @green;
+}
+
+.copyright__link:disabled .copyright__icon {
+  opacity: 30%;
 }

@@ -1,7 +1,91 @@
+.gift {
+  position: relative;
+}
+
+.gift::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 290px;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.gift::after {
+  position: absolute;
+  top: 56px;
+  left: 105px;
+  display: inline-block;
+  content: "";
+  width: 78px;
+  height: 80px;
+  background-image: url("../images/catalog/gift/icon-gift.svg");
+  z-index: 5;
+}
+
 
 .gift__description {
+  position: absolute;
+  margin: 0;
+  bottom: 45px;
+  left: 58px;
   font-family: @ff-lato;
   font-size: 16px;
   line-height: 20px;
+  color: @white;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .gift::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 200px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-tablet.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .gift__description {
+    max-width: 161px;
+    text-align: left;
+    padding: 30px 30px 30px 414px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gift::before {
+    display: block;
+    content: "";
+    width: 100%;
+    height: 289px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-desktop.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .gift__description {
+    position: absolute;
+    padding: 0;
+    bottom: 114px;
+    left: 46px;
+    text-align: center;
+  }
+
+  .gift::after {
+    position: absolute;
+    top: 56px;
+    left: 83px;
+    display: inline-block;
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../images/catalog/gift/icon-gift.svg");
+    z-index: 5;
+  }
 }
