@@ -5,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи-страница формы</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/favicons/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__box">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html">
-            <img
-              class="logo-image"
-              src="images/logo/logo-1.svg"
-              width="34"
-              height="38"
-              alt="изображение логотипа «Кэт Энерджи» ."
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="images/logo/logo-1-desktop.svg"
+                width="202"
+                height="59"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="images/logo/logo-1-tablet.svg"
+                width="174"
+                height="51"
+              />
+              <img
+                class="logo-image"
+                src="images/logo/logo-1.svg"
+                width="34"
+                height="38"
+                alt="изображение логотипа «Кэт Энерджи» ."
+              />
+            </picture>
           </a>
           <a class="main-header__logo-2" href="index.html">
             <img

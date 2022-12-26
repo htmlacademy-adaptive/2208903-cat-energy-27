@@ -5,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи-страница каталога</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/favicons/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__box main-header__box--index">
+      <div class="main-header__box">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html">
-            <img
-              class="logo-image"
-              src="images/logo/logo-1.svg"
-              width="34"
-              height="38"
-              alt="изображение логотипа «Кэт Энерджи» ."
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="images/logo/logo-1-desktop.svg"
+                width="202"
+                height="59"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="images/logo/logo-1-tablet.svg"
+                width="174"
+                height="51"
+              />
+              <img
+                class="logo-image"
+                src="images/logo/logo-1.svg"
+                width="34"
+                height="38"
+                alt="изображение логотипа «Кэт Энерджи» ."
+              />
+            </picture>
           </a>
           <a class="main-header__logo-2" href="index.html">
             <img
@@ -66,13 +84,25 @@
                 <div class="product__container">
                   <div class="product__image-container">
                     <a class="product__link" href="#">
-                      <img
-                        class="product__image"
-                        src="images/catalog/products/catalog-can-1.jpg"
-                        width="68"
-                        height="86"
-                        alt="оранжевая баночка 500г."
-                      />
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            images/catalog/products/catalog-can-1-tablet.jpg    1x,
+                            images/catalog/products/catalog-can-1-tablet@2x.jpg 2x
+                          "
+                          width="161"
+                          height="172" />
+                        <img
+                          class="product__image"
+                          src="images/catalog/products/catalog-can-1.jpg"
+                          srcset="
+                            images/catalog/products/catalog-can-1-mobile@2x.jpg 2x
+                          "
+                          width="68"
+                          height="86"
+                          alt="оранжевая баночка 500г."
+                      /></picture>
                     </a>
                   </div>
                   <div class="product__item-container">
@@ -106,13 +136,36 @@
                 <div class="product__container">
                   <div class="product__image-container">
                     <a class="product__link" href="#">
-                      <img
-                        class="product__image"
-                        src="images/catalog/products/catalog-can-2.jpg"
-                        width="84"
-                        height="100"
-                        alt="оранжевая баночка 1000г."
-                      />
+                      <picture>
+                        <source
+                          media="(min-width: 1440px)"
+                          srcset="
+                            images/catalog/products/catalog-can-2-desktop.jpg    1x,
+                            images/catalog/products/catalog-can-2-desktop@2x.jpg 2x
+                          "
+                          width="162"
+                          height="196"
+                        />
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            images/catalog/products/catalog-can-2-tablet.jpg    1x,
+                            images/catalog/products/catalog-can-2-tablet@2x.jpg 2x
+                          "
+                          width="168"
+                          height="206"
+                        />
+                        <img
+                          class="product__image"
+                          src="images/catalog/products/catalog-can-2.jpg"
+                          srcset="
+                            images/catalog/products/catalog-can-mobile-2@2x.jpg 2x
+                          "
+                          width="84"
+                          height="100"
+                          alt="оранжевая баночка 1000г."
+                        />
+                      </picture>
                     </a>
                   </div>
                   <div class="product__item-container">
@@ -146,13 +199,23 @@
                 <div class="product__container">
                   <div class="product__image-container">
                     <a class="product__link" href="#">
-                      <img
-                        class="product__image"
-                        src="images/catalog/products/catalog-can-3.jpg"
-                        width="68"
-                        height="78"
-                        alt="зеленая баночка 500 г."
-                      />
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            images/catalog/products/catalog-can-3-tablet.jpg
+                          "
+                          width="161"
+                          height="172"
+                        />
+                        <img
+                          class="product__image"
+                          src="images/catalog/products/catalog-can-3.jpg"
+                          width="68"
+                          height="78"
+                          alt="зеленая баночка 500 г."
+                        />
+                      </picture>
                     </a>
                   </div>
                   <div class="product__item-container">
@@ -186,13 +249,23 @@
                 <div class="product__container">
                   <div class="product__image-container">
                     <a class="product__link" href="#">
-                      <img
-                        class="product__image"
-                        src="images/catalog/products/catalog-can-4.jpg"
-                        width="84"
-                        height="100"
-                        alt="зеленая баночка 1000г."
-                      />
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            images/catalog/products/catalog-can-4-tablet.jpg
+                          "
+                          width="168"
+                          height="206"
+                        />
+                        <img
+                          class="product__image"
+                          src="images/catalog/products/catalog-can-4.jpg"
+                          width="84"
+                          height="100"
+                          alt="зеленая баночка 1000г."
+                        />
+                      </picture>
                     </a>
                   </div>
                   <div class="product__item-container">
@@ -226,13 +299,23 @@
                 <div class="product__container">
                   <div class="product__image-container">
                     <a class="product__link" href="#">
-                      <img
-                        class="product__image"
-                        src="images/catalog/products/catalog-can-5.jpg"
-                        width="68"
-                        height="78"
-                        alt="синяя баночка 500 г."
-                      />
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            images/catalog/products/catalog-can-5-tablet.jpg
+                          "
+                          width="161"
+                          height="172"
+                        />
+                        <img
+                          class="product__image"
+                          src="images/catalog/products/catalog-can-5.jpg"
+                          width="68"
+                          height="78"
+                          alt="синяя баночка 500 г."
+                        />
+                      </picture>
                     </a>
                   </div>
                   <div class="product__item-container">
@@ -266,13 +349,23 @@
                 <div class="product__container">
                   <div class="product__image-container">
                     <a class="products__link" href="#">
-                      <img
-                        class="product__image"
-                        src="images/catalog/products/catalog-can-6.jpg"
-                        width="84"
-                        height="100"
-                        alt="синяя баночка 1000 г."
-                      />
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            images/catalog/products/catalog-can-6-tablet.jpg
+                          "
+                          width="168"
+                          height="206"
+                        />
+                        <img
+                          class="product__image"
+                          src="images/catalog/products/catalog-can-6.jpg"
+                          width="84"
+                          height="100"
+                          alt="синяя баночка 1000 г."
+                        />
+                      </picture>
                     </a>
                   </div>
                   <div class="product__item-container">
@@ -306,13 +399,23 @@
                 <div class="product__container">
                   <div class="product__image-container">
                     <a class="product__link" href="#">
-                      <img
-                        class="product__image"
-                        src="images/catalog/products/catalog-can-7.jpg"
-                        width="72"
-                        height="84"
-                        alt="фиолетовая баночка 500г."
-                      />
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="
+                            images/catalog/products/catalog-can-7-tablet.jpg
+                          "
+                          width="163"
+                          height="174"
+                        />
+                        <img
+                          class="product__image"
+                          src="images/catalog/products/catalog-can-7.jpg"
+                          width="72"
+                          height="84"
+                          alt="фиолетовая баночка 500г."
+                        />
+                      </picture>
                     </a>
                   </div>
                   <div class="product__item-container">

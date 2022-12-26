@@ -53,8 +53,11 @@
     border-color: @special-grey;
   }
 
-  &:focus ~ svg {
+  &:focus {
     outline: 2px solid @dark-grey;
+  }
+
+  &:focus ~ svg {
     stroke: @green;
   }
 }
@@ -98,7 +101,7 @@
   }
 
   .form-contacts__title::before {
-    width: 0;
+    content: none;
   }
 
   .form-contacts__container {

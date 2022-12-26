@@ -19,6 +19,24 @@
 
 .main-header__logo {
   margin-right: 56px;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
+.main-header__logo-2 {
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
 }
 
 .main-header__toggle {
@@ -72,6 +90,18 @@
 
   .main-header__logo {
     margin: 0;
+
+    &:hover {
+      opacity: 80%;
+    }
+
+    &:active {
+      opacity: 60%;
+    }
+  }
+
+  .main-header__logo-2 {
+    display: none;
   }
 
   .main-header__toggle {
@@ -81,7 +111,7 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    min-height: 133px;
+    min-height: 224px;
     background-color: inherit;
   }
 
@@ -90,8 +120,14 @@
     margin: 0 auto;
     padding: 0 110px;
     display: grid;
-    grid-template-columns: 201px 497px;
-    gap: 0 521px;
+    grid-template-columns: 201px 867px;
+    gap: 0 150px;
     align-items: center;
   }
+
+  .main-header__box--index {
+    grid-template-columns: 201px 497px;
+    gap: 0 521px;
+  }
+
 }
