@@ -40,9 +40,7 @@
 }
 
 .main-header__toggle {
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
   z-index: 2;
   display: block;
   padding: 0;
@@ -56,8 +54,8 @@
 .main-header__toggle::before {
   content: "";
   position: absolute;
-  top: 24px;
-  left: 17px;
+  top: 16px;
+  left: 32px;
   width: 36px;
   height: 1.5px;
   background-color: @black;
@@ -130,4 +128,9 @@
     gap: 0 521px;
   }
 
+  .main-header__box--index .site-list__link {
+    color: @white;
+    padding: 0;
+    padding-bottom: 8px;
+  }
 }
