@@ -5,23 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи-главная страница</title>
     <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="images/favicons/apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <header class="main-header">
       <div class="main-header__box main-header__box--index">
         <div class="main-header__wrapper">
           <a class="main-header__logo" href="index.html">
-            <img
-              class="logo-image"
-              src="images/logo/logo-1.svg"
-              width="34"
-              height="38"
-              alt="изображение логотипа «Кэт Энерджи» ."
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="images/logo/logo-1-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="images/logo/logo-1-tablet.svg"
+              />
+              <img
+                class="main-header__logo-image"
+                src="images/logo/logo-1.svg"
+                width="34"
+                height="38"
+                alt="изображение логотипа «Кэт Энерджи» ."
+              />
+            </picture>
           </a>
           <a class="main-header__logo-2" href="index.html">
             <img
-              class="logo-image-2"
+              class="main-header__logo-image-2"
               src="images/logo/logo-2.svg"
               width="101"
               height="18"
@@ -36,26 +50,17 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
-                <a
-                  class="site-list__link site-list__link--curent site-list__link--change"
-                  href="#"
-                >
+                <a class="site-list__link site-list__link--curent" href="#">
                   Главная
                 </a>
               </li>
               <li class="site-list__item">
-                <a
-                  class="site-list__link site-list__link--change"
-                  href="catalog.html"
-                >
+                <a class="site-list__link" href="catalog.html">
                   Каталог продукции
                 </a>
               </li>
               <li class="site-list__item">
-                <a
-                  class="site-list__link site-list__link--change"
-                  href="form.html"
-                >
+                <a class="site-list__link" href="form.html">
                   Подбор программы
                 </a>
               </li>
@@ -82,13 +87,30 @@
               </p>
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
             </div>
-            <img
-              class="promo__image"
-              src="images/index/index-can.png"
-              width="280"
-              height="270"
-              alt="Изображение банки с кормом «Кэт Энерджи» "
-            />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  images/index/promo/index-can-desktop.png    1x,
+                  images/index/promo/index-can-desktop@2x.png 2x
+                "
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  images/index/promo/index-can-tablet.png    1x,
+                  images/index/promo/index-can-tablet@2x.png 2x
+                "
+              />
+              <img
+                class="promo__image"
+                src="images/index/promo/index-can-mobile.png"
+                srcset="images/index/promo/index-can-mobile@2x.png 2x"
+                width="280"
+                height="270"
+                alt="Изображение банки с кормом «Кэт Энерджи» "
+              />
+            </picture>
             <a class="promo__button" href="form.html">Подобрать программу</a>
           </header>
         </div>
@@ -189,13 +211,19 @@
             </div>
           </div>
           <div class="example__image-container">
-            <img
-              class="=example__image"
-              src="images/index/example/fat-cat-image.jpg"
-              width="140"
-              height="256"
-              alt="изображение кота."
-            />
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="images/index/example/fat-cat-image-tablet.jpg"
+              />
+              <img
+                class="example__image"
+                src="images/index/example/fat-cat-image.jpg"
+                width="140"
+                height="256"
+                alt="изображение кота."
+              />
+            </picture>
           </div>
         </div>
       </section>

@@ -14,6 +14,11 @@
   background-repeat: no-repeat;
   background-position: center;
   z-index: -1;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(@green-3, @green-3), url("../images/index/promo/promo-cat-mobile@2x.jpg");
+    background-size: contain;
+  }
 }
 
 .promo__wrapper {
@@ -135,13 +140,15 @@
     order: 2;
     z-index: 1;
     margin-top: -27px;
+    width: 709px;
+    height: 609px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
     position: inherit;
-    min-height: 694px;
+    min-height: 556px;
   }
 
   .promo::before {
@@ -153,6 +160,11 @@
     top: 0;
     left: 50%;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(@green-3, @green-3), url("../images/index/promo/promo-cat-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .promo__wrapper {
@@ -182,8 +194,13 @@
   }
 
   .promo__image {
+    position: absolute;
+    top: 174px;
+    right: 325px;
     grid-column: 2/3;
     grid-row: 1/2;
+    width: 552px;
+    height: 499px;
   }
 
   .promo__button {

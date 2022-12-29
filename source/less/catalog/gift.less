@@ -11,6 +11,11 @@
   left: 0;
   background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-mobile.jpg");
   background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-mobile@2x.jpg");
+    background-size: cover;
+  }
 }
 
 .gift::after {
@@ -48,6 +53,10 @@
     left: 0;
     background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-tablet.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-tablet@2x.jpg");
+    }
   }
 
   .gift__description {
@@ -67,6 +76,10 @@
     left: 0;
     background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-desktop.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(@green-3, @green-3), url("../images/catalog/gift/catalog-cat-in-bag-desktop@2x.jpg");
+    }
   }
 
   .gift__description {
