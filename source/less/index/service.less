@@ -91,16 +91,18 @@
   }
 }
 
-.service__link::after {
+.service__link-icon {
   position: absolute;
-  display: inline-block;
   top: 6px;
   right: -35px;
-  content: "";
-  width: 24px;
-  height: 12px;
-  background-image: url("../images/index/service/service-image-arrow.svg");
-  background-repeat: no-repeat;
+  transform: scaleX(1);
+  transform-origin: center;
+  transition: transform 0.5s;
+
+
+  &:hover {
+    transform: scaleX(1.4);
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -181,6 +183,10 @@
   .service__link {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .service__link-icon {
+    top: 10px;
   }
 }
 
