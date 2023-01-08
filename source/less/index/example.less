@@ -2,7 +2,6 @@
   background-color: @gray-3;
 }
 
-
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -16,15 +15,20 @@
 
 .example__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
+  padding-left: 20px;
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
 }
 
+.example__description br {
+  display: none;
+}
+
 .example__description {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-family: @ff-lato;
   color: @dark-grey;
   font-weight: 700;
@@ -38,7 +42,7 @@
   gap: 0 32px;
   text-align: center;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 32px;
 }
 
 .example__item {
@@ -55,6 +59,7 @@
   font-family: @ff-oswald;
   font-size: 24px;
   line-height: 24px;
+  text-transform: uppercase;
 }
 
 .example__description-2 {
@@ -78,6 +83,7 @@
   font-size: 14px;
   line-height: 20px;
   margin: 0;
+  margin-right: 7px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -93,6 +99,7 @@
 .example__image-container {
   width: 280px;
   padding: 0 20px;
+  padding-bottom: 21px;
   margin: 0 auto;
   text-align: center;
 }
@@ -100,6 +107,7 @@
 @media (min-width: @tablet-width) {
   .example {
     background-color: @white;
+    margin-bottom: 110px;
   }
 
   .example__wrapper {
@@ -112,16 +120,21 @@
   .example__title {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 61px;
   }
 
   .example__description {
     margin-bottom: 54px;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   .example__description-2 {
     background-color: @white;
     top: 63px;
-    max-width: 107px;
+    max-width: 125px;
+    font-size: 14px;
+    line-height: 14px;
   }
 
   .example__description-2 br {
@@ -130,13 +143,14 @@
 
   .example__box {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
   }
 
   .example__list {
     display: grid;
     grid-template-columns: 164px 164px;
+    gap: 0 42px;
     margin: 0;
     margin-bottom: 55px;
   }
@@ -155,11 +169,15 @@
   .example__expences {
     font-size: 20px;
     line-height: 20px;
+    margin-top: 12px;
+    margin-bottom: 9px;
+    margin-right: 2px;
   }
 
   .example__expences-2 {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 2px;
   }
 
   .example__image-container {
@@ -177,6 +195,18 @@
     background-color: @gray-3;
   }
 
+  .example__title-container {
+    background-color: @white;
+    min-height: 136px;
+    margin-bottom: 71px;
+  }
+
+  .example__title {
+    padding-left: 110px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .example__wrapper {
     width: 1220px;
     margin: 0 auto;
@@ -188,18 +218,15 @@
   }
 
   .example__container {
-    padding-bottom: 75px;
-  }
-
-  .example__title {
-    font-size: 60px;
-    line-height: 60px;
+    padding: 0;
   }
 
   .example__description {
-    width: 435px;
-    font-size: 18px;
+    width: 432px;
+    font-size: 16px;
     line-height: 24px;
+    margin: 0;
+    margin-bottom: 66px;
   }
 
   .example__box {
@@ -212,6 +239,7 @@
     display: grid;
     grid-template-columns: 162px 162px;
     gap: 55px 42px;
+    margin-bottom: 61px;
   }
 
   .example__description-2 {
@@ -222,5 +250,9 @@
     display: grid;
     grid-template-columns: 174px 90px;
     gap: 0 63px;
+  }
+
+  .example__expences {
+    margin: 0;
   }
 }

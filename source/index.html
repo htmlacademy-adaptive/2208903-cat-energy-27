@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи-главная страница</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="images/favicons/apple.png" />
@@ -42,11 +42,14 @@
               alt="изображение логотипа «Кэт Энерджи» в виде букв."
             />
           </a>
-          <button class="main-header__toggle" type="button">
+          <button
+            class="main-header__toggle main-header__toggle--switch"
+            type="button"
+          >
             <span class="visually-hidden">Открыть меню.</span>
           </button>
         </div>
-        <nav class="main-nav main-nav--closed main-nav--open">
+        <nav class="main-nav main-nav--closed main-nav--open main-nav--nojs">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--active">
@@ -87,6 +90,7 @@
               </p>
               <p class="promo__slogan">Занялся собой? Займись котом!</p>
             </div>
+
             <picture>
               <source
                 media="(min-width: 1440px)"
@@ -208,14 +212,16 @@
         </div>
       </section>
       <section class="example">
+        <div class="example__title-container">
+          <h2 class="example__title">Живой пример</h2>
+        </div>
         <div class="example__wrapper">
           <div class="example__container">
-            <h2 class="example__title">Живой пример</h2>
             <p class="example__description">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов
-              в день.
+              на Cat Energy Slim.<br />
+              Отличный результат без изнуряющих тренировок! При этом он не менял
+              своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="example__box">
               <dl class="example__list">
@@ -266,11 +272,13 @@
               к сотрудничеству<br />
               дилеров!
             </b>
-            <p class="contacts__text">
-              ул. Большая<br />
-              Конюшенная, д. 19/8<br />
-              Санкт-Петербург
-            </p>
+            <div class="contacts__text-container">
+              <p class="contacts__text">
+                ул. Большая<br />
+                Конюшенная, д. 19/8<br />
+              </p>
+              <p class="contacts__text-2">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="contacts__map-wrapper">
@@ -292,7 +300,7 @@
           <h2 class="visually-hidden">Лого футера.</h2>
           <a class="main-footer__logo-2" href="#">
             <img
-              class="logo-image-2"
+              class="main-footer__logo-image-2"
               src="images/logo/logo-2.svg"
               width="128"
               height="24"
@@ -346,5 +354,6 @@
         </div>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Кэт энерджи-страница формы</title>
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
     <link rel="icon" href="favicon.ico" />
     <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="images/favicons/apple.png" />
@@ -74,6 +74,7 @@
       <div class="form-content__wrapper">
         <h1 class="visually-hidden">Заполните данные</h1>
       </div>
+
       <form
         class="form-item"
         action="https://echo.htmlacademy.ru/"
@@ -238,13 +239,12 @@
         <fieldset class="form-comment">
           <div class="form-comment__wrapper">
             <h2 class="form-comment__title">Комментарий</h2>
-            <textarea
+            <input
               class="form-comment__textarea"
               placeholder="Расскажите обо всех повадках кота"
               name="comment"
               id="comment-field"
-            >
-            </textarea>
+            />
           </div>
         </fieldset>
         <fieldset class="form-checkbox">
@@ -329,11 +329,13 @@
               к сотрудничеству<br />
               дилеров!
             </b>
-            <p class="contacts__text">
-              ул. Большая<br />
-              Конюшенная, д. 19/8<br />
-              Санкт-Петербург
-            </p>
+            <div class="contacts__text-container">
+              <p class="contacts__text">
+                ул. Большая<br />
+                Конюшенная, д. 19/8<br />
+              </p>
+              <p class="contacts__text-2">Санкт-Петербург</p>
+            </div>
           </div>
         </div>
         <div class="contacts__map-wrapper">
@@ -355,7 +357,7 @@
           <h2 class="visually-hidden">Лого футера.</h2>
           <a class="main-footer__logo-2" href="#">
             <img
-              class="logo-image-2"
+              class="main-footer__logo-image-2"
               src="images/logo/logo-2.svg"
               width="128"
               height="24"

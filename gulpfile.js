@@ -1,21 +1,97 @@
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
+import htmlmin from 'gulp-htmlmin';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
+import csso from 'postcss-csso';
+import rename from 'gulp-rename';
+import squoosh from 'gulp-libsquoosh';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([
-      autoprefixer()
+      autoprefixer(),
+      csso()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(rename('style.min.css'))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+// HTML
+
+ const html = () => {
+  return gulp.src('source/*.html')
+   .pipe(htmlmin({ collapseWhitespace: true }))
+   .pipe(gulp.dest('build'));
+
+}
+
+// Scripts
+
+const script = () => {
+  return gulp.src('source/js/*.js')
+   .pipe(gulp.dest('build/js'))
+   .pipe(browser.stream());
+}
+
+// Images
+
+const optimazeImages = () => {
+  return gulp.src('source/images/**/*.{png,jpg}')
+   .pipe(squoosh())
+   .pipe(gulp.dest('build/images'))
+}
+
+const copyImages = () => {
+  return gulp.src('source/images/**/*.{png,jpg}')
+  .pipe(gulp.dest('build/images'))
+}
+
+// WebP
+
+export const createWebp = () => {
+  return gulp.src('source/images/**/*.{png,jpg}')
+   .pipe(squoosh({
+   webp: {}
+  }))
+  .pipe(gulp.dest('build/images'))
+}
+
+// SVG
+
+const svg = () =>
+  gulp.src(['source/images/*.svg', '!source/images/icons/*.svg'])
+  .pipe(svgo())
+  .pipe(gulp.dest('build/images'));
+
+const sprite = () => {
+  return gulp.src('source/images/icons/*.svg')
+  .pipe(svgo())
+  .pipe(svgstore({
+  inlineSvg: true
+}))
+.pipe(rename('sprite.svg'))
+.pipe(gulp.dest('build/images'));
+}
+
+export const copy = (done) => {
+  gulp.src([
+    'source/fonts/**/*.{woff2,woff}',
+    'source/*.ico',
+    'source/manifest.webmanifest',
+  ], {
+    base: 'source'
+  })
+
+    .pipe(gulp.dest('build'))
+  done();
 }
 
 // Server
@@ -23,7 +99,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -41,5 +117,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  html, styles, server, watcher
 );
