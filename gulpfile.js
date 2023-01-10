@@ -1,3 +1,4 @@
+
 import gulp from 'gulp';
 import plumber from 'gulp-plumber';
 import htmlmin from 'gulp-htmlmin';
@@ -6,8 +7,15 @@ import postcss from 'gulp-postcss';
 import csso from 'postcss-csso';
 import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
+import del from 'del';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+
+// Clean
+
+export const clean = () => {
+  return del("build");
+};
 
 // Styles
 
@@ -81,6 +89,8 @@ const sprite = () => {
 .pipe(gulp.dest('build/images'));
 }
 
+// Copy
+
 export const copy = (done) => {
   gulp.src([
     'source/fonts/**/*.{woff2,woff}',
@@ -119,3 +129,38 @@ const watcher = () => {
 export default gulp.series(
   html, styles, server, watcher
 );
+
+// Build
+
+const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    styles,
+    html,
+    script,
+    sprite,
+    createWebp
+  ),
+);
+
+exports.build = build;
+
+// Default
+
+exports.default = gulp.series(
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    styles,
+    html,
+    script,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
