@@ -1,5 +1,6 @@
 .target-container {
   position: relative;
+  padding-bottom: 34px;
 }
 
 .target-container__wrapper {
@@ -17,15 +18,13 @@
   line-height: 24px;
   font-weight: 400;
   margin: 0;
-  margin-bottom: 13px;
-  padding-bottom: 36px;
-  border-bottom: 1px solid @special-grey;
+  margin-bottom: 34px;
 }
 
 .target-container__title::before {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 14px;
   height: 2px;
   width: 100%;
   background-color: @green;
@@ -34,6 +33,11 @@
 
 
 @media (min-width: @tablet-width) {
+  .target-container {
+    margin-bottom: 76px;
+    padding: 0;
+  }
+
   .target-container::before {
     content: "";
     position: absolute;
@@ -52,12 +56,12 @@
   .target-container__title {
     padding-left: 36px;
     padding-right: 37px;
-    margin-left: -36px;
     background-color: @white;
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
     border: none;
+    margin-bottom: 80px;
   }
 
   .target-container__title::before {
@@ -69,7 +73,7 @@
   .target-container__wrapper {
     width: 1220px;
     padding: 0 110px;
-    margin-bottom: 76px;
+    margin-bottom: 20px;
   }
 
   .target-container__box {
@@ -81,5 +85,8 @@
   .target-container__title {
     grid-column: 1/-1;
     grid-row: 1/2;
+    margin: 0;
+    margin-left: -35px;
+    margin-bottom: 80px;
   }
 }

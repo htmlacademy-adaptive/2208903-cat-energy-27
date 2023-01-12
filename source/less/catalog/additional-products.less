@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.additional-products__list {
+  margin-bottom: 34px;
+}
+
 .additional-products__item {
   display: grid;
   grid-template-columns: 130px 1fr;
@@ -10,6 +14,11 @@
   margin-bottom: 12px;
   padding-bottom: 19px;
   border-bottom: 1px solid @special-grey;
+}
+
+.additional-products__item:first-child {
+  padding-top: 13px;
+  border-top: 1px solid @special-grey;
 }
 
 .additional-products__value {
@@ -58,6 +67,8 @@
   background-color: @green;
   text-transform: uppercase;
   padding: 10px 124px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -68,16 +79,21 @@
 
   .additional-products__item {
     display: grid;
-    grid-template-columns: 336px 132px 42px;
+    grid-template-columns: 358px 132px 42px;
     grid-template-rows: min-content min-content;
     gap: 25px 49px;
     margin: 0;
-    padding: 26px 38px 28px 38px;
+    padding: 26px 38px 27px 38px;
     border: none;
 
     &:not(:last-child) {
       border-bottom: 1px solid @special-grey;
     }
+  }
+
+  .additional-products__item:first-child {
+    padding-top: 27px;
+    border: none;
   }
 
   .additional-products__value {
@@ -87,6 +103,8 @@
   }
 
   .additional-products__term {
+    display: flex;
+    justify-content: end;
     margin: 0;
     grid-column: 2/3;
     grid-row: 1/2;
@@ -95,11 +113,14 @@
   }
 
   .additional-products__description {
+    display: flex;
+    justify-content: space-around;
     margin: 0;
     grid-column: 3/4;
     grid-row: 1/2;
     font-size: 16px;
     line-height: 20px;
+    font-family: @ff-lato;
   }
 
   .additional-products__button {
@@ -116,16 +137,18 @@
 
   .additional-products__item {
     display: grid;
-    grid-template-columns: 325px 161px 42px 244px;
+    grid-template-columns: 287px 199px 42px 244px;
     grid-template-rows: min-content min-content;
     gap: 0 40px;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 17px;
     border-bottom: 1px solid @special-grey;
 
     &:first-child {
+      border-bottom: 1px solid @special-grey;
       border-top: 1px solid @special-grey;
+      padding-top: 16px;
     }
   }
 
@@ -139,6 +162,7 @@
   .additional-products__term {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     grid-column: 2/3;
     grid-row: 2/3;
   }
