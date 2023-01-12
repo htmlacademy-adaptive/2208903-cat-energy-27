@@ -35,16 +35,6 @@ export const styles = () => {
     .pipe(browser.stream());
 }
 
-//Autoprefixer
-
-export const css = () => {
-  return gulp.src('source/**/*.css')
-    .pipe(postcss([
-      autoprefixer(),
-    ]))
-    .pipe(gulp.dest('./dest'))
-};
-
 // Scripts
 
 export const scripts = () => {

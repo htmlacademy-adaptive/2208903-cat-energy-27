@@ -67,9 +67,9 @@
             <span class="visually-hidden">Открыть меню.</span>
           </button>
         </div>
-        <nav class="main-nav main-nav--closed main-nav--open main-nav--nojs">
+        <nav class="main-nav main-nav--closed main-nav--nojs">
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list site-list--active">
               <li class="site-list__item site-list__item--active">
                 <a class="site-list__link site-list__link--curent" href="#">
                   Главная
@@ -267,20 +267,50 @@
               </div>
             </div>
           </div>
+
           <div class="example__image-container">
-            <picture>
-              <source
-                media="(min-width: 768px)"
-                srcset="images/index/example/fat-cat-image-tablet.jpg"
-              />
-              <img
-                class="example__image"
-                src="images/index/example/fat-cat-image.jpg"
-                width="140"
-                height="256"
-                alt="изображение кота."
-              />
-            </picture>
+            <ul class="example__list-picture slider__list">
+              <li
+                class="example__item-picture slider__item slider__item--before"
+              >
+                <div class="slider__box slider__box--before">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="images/index/example/fat-cat-tablet-img.png"
+                    />
+                    <img
+                      class="example__image"
+                      src="images/index/example/fat-cat-img.png"
+                      width="280"
+                      height="256"
+                      alt="Толстый кот."
+                    />
+                  </picture>
+                </div>
+              </li>
+              <li
+                class="example__item-picture slider__item slider__item--after slider__item--current"
+              >
+                <div class="slider__box slider__box--after">
+                  <picture>
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="images/index/example/skinny-cat-tablet-img.png"
+                    />
+                    <img
+                      class="example__image"
+                      src="images/index/example/skinny-cat-img.png"
+                      width="280"
+                      height="256"
+                      alt="Худой кот."
+                    />
+                  </picture>
+                </div>
+              </li>
+            </ul>
+            <span class="slider__line"></span>
+            <span class="slider__toggle"></span>
           </div>
         </div>
       </section>

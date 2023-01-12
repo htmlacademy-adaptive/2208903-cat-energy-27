@@ -97,8 +97,9 @@
 }
 
 .example__image-container {
+  position: relative;
   width: 280px;
-  padding: 0 20px;
+  min-height: 256px;
   padding-bottom: 21px;
   margin: 0 auto;
   text-align: center;
@@ -182,6 +183,8 @@
 
   .example__image-container {
     padding: 0;
+    width: 560px;
+    min-height: 523px;
   }
 
   .example__image {
@@ -199,6 +202,7 @@
     background-color: @white;
     min-height: 136px;
     margin-bottom: 71px;
+    z-index: -1;
   }
 
   .example__title {
@@ -255,4 +259,5 @@
   .example__expences {
     margin: 0;
   }
+
 }
