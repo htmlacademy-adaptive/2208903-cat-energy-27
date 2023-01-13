@@ -1,5 +1,6 @@
 .form-contacts {
   position: relative;
+  margin-bottom: 23px;
 }
 
 .form-contacts__wrapper {
@@ -13,7 +14,7 @@
   padding-right: 21px;
   background-color: @white;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
@@ -22,7 +23,7 @@
 .form-contacts__title::before {
   content: "";
   position: absolute;
-  top: 9px;
+  top: 15px;
   height: 2px;
   width: 100%;
   background-color: @green;
@@ -33,13 +34,18 @@
   position: relative;
   display: flex;
   align-items: center;
-  margin-bottom: 14px;
+}
+
+.form-contacts__container:first-child {
+  margin-bottom: 8px;
 }
 
 .form-contacts__label {
   text-transform: uppercase;
   color: @dark-grey;
   margin-right: 10px;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .form-contacts__input {
@@ -47,6 +53,10 @@
   height: 45px;
   border: 1px solid @gray-4;
   padding-left: 20px;
+  font-family: @ff-oswald;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
 
 
   &:hover {
@@ -65,7 +75,7 @@
 .form-contacts__icon {
   position: absolute;
   color: @black;
-  right: 12px;
+  right: 16px;
   border: none;
 }
 
@@ -80,11 +90,15 @@
     z-index: -1;
   }
 
+  .form-contacts {
+    margin-bottom: 66px;
+  }
+
   .form-contacts__wrapper {
-    width: 708px;
+    width: 632px;
     margin: 0 auto;
-    margin-bottom: 65px;
-    padding: 0 30px;
+    padding-left: 69px;
+    padding-right: 67px;
   }
 
   .form-contacts__title br {
@@ -95,6 +109,7 @@
     padding-left: 39px;
     padding-right: 42px;
     margin-left: -39px;
+    margin-bottom: 77px;
     background-color: @white;
     font-size: 36px;
     line-height: 36px;
@@ -108,9 +123,14 @@
     display: flex;
   }
 
+  .form-contacts__container:first-child {
+    margin-bottom: 24px;
+  }
+
   .form-contacts__label {
     font-size: 20px;
     line-height: 30px;
+    margin-right: 22px;
   }
 
   .form-contacts__input {
@@ -120,10 +140,14 @@
     border: 1px solid;
     border-color: @gray-4;
     padding-left: 20px;
-  }
+}
 }
 
 @media (min-width: @desktop-width) {
+  .form-contacts {
+    margin-bottom: 69px;
+  }
+
   .form-contacts__wrapper {
     width: 1220px;
     padding: 0 110px;
@@ -135,6 +159,10 @@
     gap: 0 78px;
   }
 
+  .form-contacts__container:first-child {
+    margin: 0;
+  }
+
   .form-contacts__input {
     height: 45px;
     font-size: 20px;
@@ -142,5 +170,9 @@
     border: 1px solid;
     border-color: @gray-4;
     padding-left: 20px;
+  }
+
+  .form-contacts__icon {
+    right: 20px;
   }
 }

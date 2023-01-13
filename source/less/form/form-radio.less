@@ -1,9 +1,10 @@
 .form-radio {
   min-height: 116px;
+  margin-bottom: 40px;
 }
 
 .form-radio__item:not(:last-child) {
-  margin-bottom: 21px;
+  margin-bottom: 25px;
 }
 
 .form-radio__control {
@@ -39,6 +40,7 @@
   height: 14px;
   content: "";
   background-image: url("../images/form/radio/radio-icon.svg");
+  background-repeat: no-repeat;
 }
 
 .form-radio__control-input:hover ~ span {
@@ -53,10 +55,11 @@
   .form-radio {
     min-width: 630px;
     min-height: 200px;
+    margin-bottom: 72px;
   }
 
   .form-radio__list {
-    padding: 20px;
+    padding: 29px 20px 30px 20px;
     border: 1px solid @gray-4;
   }
 
@@ -65,8 +68,36 @@
     line-height: 30px;
   }
 
+  .form-radio__item:not(:last-child) {
+    margin-bottom: 23px;
+  }
+
   .form-radio__control {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 69px;
+  }
+
+  .form-radio__control-mark {
+    top: -4px;
+    left: 9px;
+    width: 38px;
+    height: 38px;
+  }
+
+  .form-radio__control-input[type="radio"]:checked ~ .form-radio__control-mark::before,
+  .form-radio__control-input[type="radio"]:checked ~ .form-radio__control-mark::after {
+    top: 9px;
+    left: 10px;
+    width: 19px;
+    height: 19px;
+    background-size: 19px 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-radio {
+    min-width: 570px;
+    margin: 0;
   }
 }
