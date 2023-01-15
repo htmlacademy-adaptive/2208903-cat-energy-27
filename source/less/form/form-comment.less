@@ -1,6 +1,6 @@
 .form-comment {
   position: relative;
-  margin-bottom: 21px;
+  margin-bottom: 24px;
 }
 
 .form-comment__wrapper {
@@ -11,7 +11,7 @@
 
 .form-comment__title {
   display: inline-block;
-  padding-right: 21px;
+  padding-right: 23px;
   font-size: 24px;
   line-height: 26px;
   background-color: @white;
@@ -32,15 +32,17 @@
 
 .form-comment__textarea {
   min-width: 274px;
-  min-height: 143px;
+  min-height: 145px;
+  font-family: @ff-oswald;
   font-size: 16px;
   line-height: 18px;
+  text-transform: uppercase;
   border: 1px solid @gray-4;
 }
 
 @media (min-width: @tablet-width) {
   .form-comment {
-    margin-bottom: 62px;
+    margin-bottom: 64px;
   }
 
   .form-comment::before {
@@ -76,16 +78,16 @@
 
   .form-comment__textarea {
     min-width: 626px;
-    min-height: 168px;
-    font-size: 24px;
-    line-height: 26px;
+    min-height: 171px;
+    font-size: 20px;
+    line-height: 30px;
     border: 1px solid @gray-4;
   }
 }
 
 @media (min-width: @desktop-width) {
   .form-comment {
-    margin-bottom: 64px;
+    margin-bottom: 68px;
   }
 
   .form-comment__wrapper {
@@ -96,8 +98,5 @@
   .form-comment__textarea {
     width: 1214px;
     min-height: 169px;
-    font-size: 24px;
-    line-height: 26px;
-    border: 1px solid @gray-4;
   }
 }
