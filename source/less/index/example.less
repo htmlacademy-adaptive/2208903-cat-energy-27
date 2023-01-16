@@ -23,13 +23,9 @@
   font-weight: 400;
 }
 
-.example__description br {
-  display: none;
-}
-
 .example__description {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   font-family: @ff-lato;
   color: @dark-grey;
   font-weight: 700;
@@ -108,14 +104,17 @@
 
 @media (min-width: @tablet-width) {
   .example {
-    background-color: @white;
-    margin-bottom: 110px;
+    padding-bottom: 100px;
   }
 
   .example__wrapper {
     width: 708px;
     margin: 0 auto;
     padding: 0 30px;
+    background-image: linear-gradient(to bottom, @white 478px, @gray-3 195px);
+  }
+
+  .example__title-container {
     background-color: @white;
   }
 
@@ -123,7 +122,8 @@
     padding-left: 30px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 61px;
+    padding-bottom: 39px;
+    margin: 0;
   }
 
   .example__description {
@@ -198,16 +198,19 @@
 @media (min-width: @desktop-width) {
   .example {
     background-color: @gray-3;
+    margin: 0;
+    padding: 0;
   }
 
   .example__title-container {
     background-color: @white;
     min-height: 136px;
-    margin-bottom: 71px;
+    margin-bottom: 70px;
     z-index: -1;
   }
 
   .example__title {
+    padding: 0;
     padding-left: 110px;
     font-size: 60px;
     line-height: 60px;
@@ -221,6 +224,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0 224px;
+    background-image: none;
   }
 
   .example__container {
@@ -235,6 +239,10 @@
     margin-bottom: 66px;
   }
 
+  .example__description br {
+    display: none;
+  }
+
   .example__box {
     display: flex;
     flex-direction: column;
@@ -245,7 +253,7 @@
     display: grid;
     grid-template-columns: 162px 162px;
     gap: 55px 42px;
-    margin-bottom: 61px;
+    margin-bottom: 63px;
   }
 
   .example__description-2 {
@@ -254,11 +262,15 @@
 
   .example__expences-container {
     display: grid;
-    grid-template-columns: 174px 90px;
+    grid-template-columns: 174px 92px;
     gap: 0 63px;
   }
 
   .example__expences {
     margin: 0;
+  }
+
+  .example__image-container {
+    min-height: 390px;
   }
 }

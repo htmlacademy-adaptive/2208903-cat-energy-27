@@ -53,19 +53,21 @@ iframe {
   .contacts__wrapper {
     width: 708px;
     padding: 0 30px;
+    padding-bottom: 19px;
   }
 
   .contacts__container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
-    padding: 54px 40px 55px 39px;
+    padding: 54px 40px 41px 39px;
   }
 
   .contacts__description {
-    width: 172px;
     font-size: 20px;
     line-height: 26px;
+    max-width: max-content;
+    padding-top: 6px;
   }
 
   .contacts__text {
@@ -73,7 +75,7 @@ iframe {
     line-height: 20px;
     text-align: right;
     margin-bottom: 20px;
-    min-width: 159px;
+    max-width: max-content;
   }
 
   .contacts__text-2 {
@@ -83,6 +85,7 @@ iframe {
     font-size: 16px;
     line-height: 20px;
     color: @dark-grey;
+    max-width: 157px;
   }
 
   iframe {
