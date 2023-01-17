@@ -1,6 +1,7 @@
 .form-item {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .form-item__wrapper {
@@ -23,7 +24,7 @@
   margin: 0;
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   text-transform: uppercase;
 }
 
@@ -65,6 +66,10 @@
 
   &:focus {
     outline: 2px solid @dark-grey;
+  }
+
+  &:focus:invalid {
+    outline: 2px solid @red-error;
   }
 }
 
