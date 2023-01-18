@@ -10,7 +10,7 @@
 .slider__item--before {
   position: absolute;
   left: 50%;
-  top: -21px;
+  top: 0;
   transform: translate(-100%, 0);
   width: 100%;
 }
@@ -19,7 +19,7 @@
   position: absolute;
   left: 50%;
   transform: translate(0, 0);
-  top: -21px;
+  top: 0;
   width: 100%;
 }
 
@@ -54,7 +54,7 @@
   content: "";
   width: 256px;
   height: 4px;
-  top: 106px;
+  top: 129px;
   left: 12px;
   background-color: @special-grey-2;
   transform: rotate(90deg);
@@ -63,12 +63,32 @@
 
 .slider__toggle {
   position: absolute;
-  top: 88px;
+  top: 110px;
   right: 120px;
   width: 40px;
   height: 40px;
   background-image: url("../images/index/example/slider-toggle.svg");
   background-repeat: no-repeat;
+}
+
+.slider__toggle-1 {
+  position: absolute;
+  z-index: 5;
+  right: 120px;
+  color: @special-grey-2;
+
+  &:hover {
+    color: @green;
+  }
+
+  &:active {
+    color: @green-2;
+    opacity: 60%;
+  }
+}
+
+.slider__toggle-2 {
+  display: none;
 }
 
 @media (min-width: @tablet-width) {
@@ -87,40 +107,66 @@
     height: 512px;
   }
 
+  .slider__item--before {
+    top: 35px;
+  }
+
+  .slider__item--after {
+    top: 35px;
+  }
+
   .slider__line {
     width: 512px;
-    top: 264px;
+    top: 286px;
     left: 24px;
   }
 
   .slider__toggle {
-    top: 246px;
+    top: 269px;
     right: 260px;
   }
 
-  .slider__item--before {
-    top: 14px;
+  .slider__toggle-1 {
+    display: none;
   }
 
-  .slider__item--after {
-    top: 14px;
+  .slider__toggle-2 {
+    position: absolute;
+    top: 31px;
+    right: 260px;
+    z-index: 5;
+    display: block;
+    color: @special-grey-2;
+
+    &:hover {
+      color: @green;
+    }
+
+    &:active {
+      color: @green-2;
+      opacity: 60%;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .slider__line {
-    top: 48px;
-  }
-
-  .slider__toggle {
-    top: 29px;
-  }
-
   .slider__item--before {
-    top: -200px;
+    top: 6px;
   }
 
   .slider__item--after {
-    top: -198px;
+    top: 6px;
+  }
+
+  .slider__toggle-2 {
+    top: 4px;
+  }
+
+  .slider__line {
+    top: 258px;
+  }
+
+  .slider__toggle {
+    top: 240px;
   }
 }

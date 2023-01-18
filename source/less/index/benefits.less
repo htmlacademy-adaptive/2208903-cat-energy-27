@@ -76,6 +76,14 @@
   max-width: 199px;
 }
 
+.mobile-transfer {
+  display: block;
+}
+
+.tablet-transfer {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .benefits {
     margin-bottom: 69px;
@@ -202,8 +210,12 @@
     min-width: 345px;
   }
 
-  .benefits__description--item-4 br {
+  .mobile-transfer {
     display: none;
+  }
+
+  .tablet-transfer {
+    display: block;
   }
 }
 

@@ -19,11 +19,17 @@
 }
 
 .product__image-container {
+  position: relative;
+  top: 9px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   width: 140px;
   min-height: 112px;
+}
+
+.product__image-container--first {
+  top: 0;
 }
 
 .product--show-more {
@@ -183,6 +189,10 @@
     padding: 0;
     padding-bottom: 36px;
     margin-top: 74px;
+  }
+
+  .product__image-container {
+    top: 0;
   }
 
   .product__container--show-more::before {
