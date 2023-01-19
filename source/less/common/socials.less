@@ -18,8 +18,12 @@
   color: @green;
 }
 
-.socials__link:disabled .socials__icon {
+.socials__link:active .socials__icon {
   opacity: 30%;
+}
+
+.socials__link:disabled .socials__icon {
+  opacity: 50%;
 }
 
 @media (min-width: @tablet-width) {
