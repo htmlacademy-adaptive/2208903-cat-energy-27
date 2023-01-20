@@ -178,6 +178,7 @@
                       name="service-group"
                       value="weight-gain"
                       required
+                      disabled
                     />
                     <span class="form-radio__control-mark"></span>
                     <span class="form-radio__control-label">Набор массы</span>
@@ -205,7 +206,7 @@
         <fieldset class="form-contacts">
           <div class="form-contacts__wrapper">
             <h2 class="form-contacts__title">
-              Контактные данные<br />
+              Контактные данные&nbsp<br />
               (владельца кота)
             </h2>
             <div class="form-contacts__box">
@@ -257,12 +258,12 @@
         <fieldset class="form-comment">
           <div class="form-comment__wrapper">
             <h2 class="form-comment__title">Комментарий</h2>
-            <input
+            <textarea
               class="form-comment__textarea"
               placeholder="Расскажите обо всех повадках кота"
               name="comment"
               id="comment-field"
-            />
+            ></textarea>
           </div>
         </fieldset>
         <fieldset class="form-checkbox">
@@ -279,6 +280,7 @@
                     value="sweetener"
                     checked
                     required
+                    disabled
                   />
                   <span class="form-checkbox__control-mark"></span>
                   <span class="form-checkbox__control-label"
@@ -340,7 +342,7 @@
 
       <section class="contacts">
         <div class="contacts__wrapper">
-          <div class="contacts__container">
+          <div class="contacts__container contacts__container--another-page">
             <h2 class="visually-hidden">Контакты.</h2>
             <b class="contacts__description">
               приглашаем<br />
@@ -348,11 +350,13 @@
               дилеров!
             </b>
             <div class="contacts__text-container">
-              <p class="contacts__text">
+              <p class="contacts__text contacts__text--another-page">
                 ул. Большая<br />
                 Конюшенная, д. 19/8<br />
               </p>
-              <p class="contacts__text-2">Санкт-Петербург</p>
+              <p class="contacts__text-2 contacts__text-2--another-page">
+                Санкт-Петербург
+              </p>
             </div>
           </div>
         </div>
@@ -370,10 +374,10 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__wrapper">
-        <div class="main-footer__logo">
+      <div class="main-footer__wrapper main-footer__wrapper--form">
+        <div class="main-footer__logo main-footer__logo--form">
           <h2 class="visually-hidden">Лого футера.</h2>
-          <a class="main-footer__logo-2" href="#">
+          <a class="main-footer__logo-2 main-footer__logo-2--form" href="#">
             <img
               class="main-footer__logo-image-2"
               src="images/logo/logo-2.svg"

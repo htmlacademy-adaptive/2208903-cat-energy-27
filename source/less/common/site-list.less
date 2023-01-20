@@ -3,9 +3,13 @@
   border-bottom: 1px solid @gray-7;
 }
 
+.site-list__item:first-child {
+  border-top: 1px solid @gray-7;
+}
+
 .site-list__link {
   display: inline-block;
-  padding: 22px 18px;
+  padding: 17px 17px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -24,10 +28,14 @@
     border: none;
   }
 
+  .site-list__item:first-child {
+    border: none;
+  }
+
   .site-list__link {
     position: relative;
     margin-bottom: 8px;
-    padding: 16px 17px;
+    padding: 17px 17px;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -55,7 +63,7 @@
     position: absolute;
     content: "";
     height: 2px;
-    width: 100%;
+    width: 90%;
     bottom: 0;
     background-color: @white;
   }

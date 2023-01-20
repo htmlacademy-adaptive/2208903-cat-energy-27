@@ -89,8 +89,54 @@
          viewBox="0 0 24 12"
          fill="none"
          xmlns="http://www.w3.org/2000/svg"
-    >
+        >
         <path stroke="#000" stroke-width="2" d="M0 6h18" />
         <path d="m24 6-6.75 5.2V.8L24 6Z" fill="#000" />
       </symbol>
-    </svg>
+      <symbol
+              id="toggle-1"
+              class="slider__toggle-1"
+              width="40"
+              height="256"
+              viewBox="0 0 40 256"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="18" width="4" height="256" rx="2" fill="currentColor" />
+              <rect x="1" y="109" width="38" height="38" rx="19" fill="white" />
+              <path d="M16 119L8 128L16 137V119Z" fill="currentColor" />
+              <path d="M32 128L24 119V137L32 128Z" fill="currentColor" />
+              <rect
+                x="1"
+                y="109"
+                width="38"
+                height="38"
+                rx="19"
+                stroke="currentColor"
+                stroke-width="2"
+              ></rect>
+       </symbol>
+      <symbol
+              id="toggle-2"
+              class="slider__toggle-2"
+              width="40"
+              height="512"
+              viewBox="0 0 40 512"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect x="18" width="4" height="512" rx="2" fill="currentColor" />
+              <rect x="1" y="237" width="38" height="38" rx="19" fill="white" />
+              <path d="M16 247L8 256L16 265V247Z" fill="currentColor" />
+              <path d="M32 256L24 247V265L32 256Z" fill="currentColor" />
+              <rect
+                x="1"
+                y="237"
+                width="38"
+                height="38"
+                rx="19"
+                stroke="currentColor"
+                stroke-width="2"
+              ></rect>
+       </symbol>
+ </svg>

@@ -1,6 +1,27 @@
 .form-radio {
+  position: relative;
   min-height: 116px;
   margin-bottom: 40px;
+}
+
+.form-radio::before {
+  position: absolute;
+  content: "";
+  width: 1000px;
+  top: -29px;
+  left: -300px;
+  height: 1px;
+  background-color: #ebebeb;
+}
+
+.form-radio::after {
+  position: absolute;
+  content: "";
+  width: 1000px;
+  left: -300px;
+  bottom: -24px;
+  height: 1px;
+  background-color: #ebebeb;
 }
 
 .form-radio__item:not(:last-child) {
@@ -56,6 +77,14 @@
     min-width: 630px;
     min-height: 200px;
     margin-bottom: 72px;
+  }
+
+  .form-radio::before {
+    content: none;
+  }
+
+  .form-radio::after {
+    content: none;
   }
 
   .form-radio__list {

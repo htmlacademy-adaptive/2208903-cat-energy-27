@@ -1,6 +1,7 @@
 .form-contacts {
   position: relative;
   margin-bottom: 23px;
+  overflow: hidden;
 }
 
 .form-contacts__wrapper {
@@ -11,7 +12,7 @@
 
 .form-contacts__title {
   display: inline-block;
-  padding-right: 21px;
+  padding-right: 14px;
   background-color: @white;
   margin: 0;
   margin-bottom: 34px;
@@ -70,6 +71,14 @@
   &:focus ~ svg {
     color: @green;
   }
+
+  // &:focus:invalid {
+  //   outline: 2px solid @red-error;
+  // }
+
+  // &:focus:invalid ~ svg {
+  //   color: @red-error;
+  // }
 }
 
 .form-contacts__icon {
@@ -145,12 +154,13 @@
 
 @media (min-width: @desktop-width) {
   .form-contacts {
-    margin-bottom: 69px;
+    margin-bottom: 67px;
   }
 
   .form-contacts__wrapper {
     width: 1220px;
     padding: 0 110px;
+    padding-bottom: 2px;
   }
 
   .form-contacts__box {

@@ -1,6 +1,7 @@
 .target-container {
   position: relative;
   padding-bottom: 34px;
+  overflow: hidden;
 }
 
 .target-container__wrapper {
@@ -70,10 +71,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .target-container {
+    margin-bottom: 16px;
+  }
+
   .target-container__wrapper {
     width: 1220px;
     padding: 0 110px;
-    margin-bottom: 20px;
   }
 
   .target-container__box {
@@ -87,6 +91,6 @@
     grid-row: 1/2;
     margin: 0;
     margin-left: -35px;
-    margin-bottom: 80px;
+    margin-bottom: 79px;
   }
 }
