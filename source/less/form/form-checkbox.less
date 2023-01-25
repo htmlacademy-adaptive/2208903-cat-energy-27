@@ -61,8 +61,10 @@
   border: 1px solid @special-grey;
 }
 
-.form-checkbox__control-input[type="checkbox"]:checked ~ .form-checkbox__control-mark::before,
-.form-checkbox__control-input[type="checkbox"]:checked ~ .form-checkbox__control-mark::after {
+.form-checkbox__control-input[type="checkbox"]:checked
+  ~ .form-checkbox__control-mark::before,
+.form-checkbox__control-input[type="checkbox"]:checked
+  ~ .form-checkbox__control-mark::after {
   position: absolute;
   top: 7px;
   left: 6px;
@@ -75,6 +77,10 @@
 
 .form-checkbox__control-input:hover ~ span {
   border-color: @gray-8;
+}
+
+.form-checkbox__control-input:focus ~ span {
+  border-color: @black;
 }
 
 .form-checkbox__control-input:disabled ~ span {
@@ -174,8 +180,10 @@
     line-height: 30px;
   }
 
-  .form-checkbox__control-input[type="checkbox"]:checked ~ .form-checkbox__control-mark::before,
-  .form-checkbox__control-input[type="checkbox"]:checked ~ .form-checkbox__control-mark::after {
+  .form-checkbox__control-input[type="checkbox"]:checked
+    ~ .form-checkbox__control-mark::before,
+  .form-checkbox__control-input[type="checkbox"]:checked
+    ~ .form-checkbox__control-mark::after {
     top: 12px;
     left: 8px;
     width: 24px;
@@ -226,4 +234,3 @@
     gap: 0 83px;
   }
 }
-

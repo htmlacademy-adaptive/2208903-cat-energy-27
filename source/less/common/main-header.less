@@ -71,6 +71,14 @@
     border: none;
     box-shadow: 0 8px 0 0 @black, 0 16px 0 0 @black;
   }
+
+  &:hover {
+    opacity: 60%;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .main-header__toggle--switch {
@@ -101,7 +109,7 @@
 
   &:active::before,
   &:active::after {
-    background-color: @basic-grey;
+    opacity: 30%;
   }
 }
 
