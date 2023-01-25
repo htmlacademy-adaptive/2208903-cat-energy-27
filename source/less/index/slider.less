@@ -71,6 +71,17 @@
   background-repeat: no-repeat;
 }
 
+.slider__button-1 {
+  padding: 0;
+  margin: 0;
+  border: none;
+  overflow: hidden;
+}
+
+.slider__button-2 {
+  display: none;
+}
+
 .slider__toggle-1 {
   position: absolute;
   z-index: 5;
@@ -79,6 +90,10 @@
 
   &:hover {
     color: @green;
+  }
+
+  &:focus {
+    color: @black;
   }
 
   &:active {
@@ -121,6 +136,17 @@
     left: 24px;
   }
 
+  .slider__button-1 {
+    display: none;
+  }
+
+  .slider__button-2 {
+    display: block;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+  }
+
   .slider__toggle {
     top: 269px;
     right: 260px;
@@ -140,6 +166,10 @@
 
     &:hover {
       color: @green;
+    }
+
+    &:focus {
+      color: @black;
     }
 
     &:active {
